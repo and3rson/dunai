@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+body {
+    padding: 2rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4.25rem;
+    line-height: 4.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: none;
+}
+
+.middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.splash .title h1, .splash .title h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.splash .title h1, .splash .title h2 {
+    text-align: left;
+}
+
+.row {
+    font-size: 0;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.row [class^="col-"], .row [class*=" col-"] {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.row .col-1-2 {
+    width: 50%;
+}
+
+.row .col-1-3 {
+    width: 33.3333%;
+}
+
+.splash {
+    display: table;
+}
+
+.splash .photo {
+    width: 10rem;
+    height: 10rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.splash .title {
+    display: table-cell;
+    padding: 0 2rem;
+    vertical-align: middle;
+}
+
+.company {
+    margin: 2rem 0 0;
+    page-break-inside: avoid !important;
+}
+
+.company-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.contacts, .project {
+    page-break-inside: avoid !important;
+}
+

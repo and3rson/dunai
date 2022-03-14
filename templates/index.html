@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Andrew Dunai</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css?30" />
+        <link rel="stylesheet" type="text/css" href="/static/css/icomoon.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="SkJC4hg_kbFTRduhPgpRUMiRJzMwoACaZ9hcBWxHJ9Y" />
+        <meta name="theme-color" content="#080800" />
+        <meta name="msapplication-navbutton-color" content="#080800" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#080800" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="splash">
+                <div class="splash-bg visible" style="background-image: url(/static/images/me5-blurred2.jpg)">
+                </div>
+                <div class="splash-bg">
+                </div>
+                <div class="splash-inside">
+                    <div class="container">
+                        <div class="header">
+                            <h1 class="headline">Andrew
+                                <div class="impact">
+                                    <span>D</span><span>u</span><span>n</span><span>a</span><span>i</span>
+                                </div></h1>
+                            <h2 class="message">Pwning teh internetz since 2007</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="splash-slash">-->
+                <!--</div>-->
+                <div class="splash-gradient">
+                </div>
+            </div>
+            <div class="bio">
+                <div class="container">
+                    {{ range $paragraph := .cv.Bio }}
+                    <p>
+                        {{ $paragraph }}
+                    </p>
+                    {{ end }}
+                    <p>Psst: this website is avaiable via <a href="https://gemini.circumlunar.space/">gemini</a> at <a href="gemini://dun.ai/">gemini://dun.ai/</a>. Let's build a better, safer &amp; faster web together!</p>
+                </div>
+            </div>
+            <div class="companies">
+                <div class="slash-ctn">
+                    <div class="slash companies-slash"></div>
+                </div>
+                <div class="section-head companies-head">
+                    <h1>Companies</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        {{ range $company := .cv.Companies }}
+                        <div class="col col-6 col-print-12">
+                            <div class="company">
+                                <div class="company-left">
+                                    <img class="company-icon" src="/static/{{ $company.Icon }}" alt="{{ $company.Name }} icon" />
+                                </div>
+                                <div class="company-right">
+                                    <div class="company-header">
+                                        <h3 class="company-role" style="color: {{ $company.Color }}">
+                                            {{ $company.Role }}
+                                        </h3>
+                                        <h4 class="company-name" style="color: {{ $company.Color }}">
+                                            {{ $company.Name }}
+                                        </h4>
+                                        <h4 class="company-date">
+                                            {{ $company.PrettyStart }} - {{ if $company.End }}{{ $company.PrettyEnd }}{{ else }}now{{ end }}
+                                        </h4>
+                                    </div>
+                                    <p class="company-descr"><strong>About:</strong> {{ $company.Info }}</p>
+                                    <p class="company-descr"><strong>My role:</strong> {{ $company.Description }}</p>
+                                    <div class="company-technologies">
+                                        {{ range $technology := $company.Technologies }}
+                                            <span class="technology">
+                                                {{ range $key, $value := $technology }}
+                                                <i class="icon icon-{{ $value }}" title="{{ $key }}" data-tippy="{{ $key }}"></i>
+                                                {{ end }}
+                                            </span>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="slash-ctn">
+                    <div class="slash projects-slash"></div>
+                </div>
+                <div class="section-head projects-head">
+                    <h1>Some of my public contributions</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        {{ range $project := .projects }}
+                        <div class="project col col-print-6">
+                            <h3 class="project-header">{{ if $project.Stars }}★ {{ $project.Stars }} {{ end }}<a href="{{ $project.Link }}">{{ $project.Title }}</a></h3>
+                            <div class="project-description">
+                                {{ $project.Description }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{/*
+            <div class="features">
+                <div class="slash-ctn">
+                    <div class="slash features-slash"></div>
+                </div>
+                <div class="section-head features-head">
+                    <h1>Lifestyle</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        {{ range $feature := .features }}
+                            <div class="col">
+                                <a href="#" class="feature nohl" data-image-url="{{ $feature.photo.url }}" data-thumbnail-url="{{ $feature.photo }}">
+                                    <div class="cover" style="background-image: url({{ $feature.photo }})"></div>
+                                    <div class="note">
+                                        <div>{{ $feature.comment }}</div>
+                                        <div class="location">@ {{ $feature.location }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            */}}
+            <div class="contacts">
+                <div class="slash-ctn">
+                    <div class="slash contacts-slash"></div>
+                </div>
+                <div class="section-head contacts-head">
+                    <h1>Contacts</h1>
+                </div>
+                <div class="container">
+                    <div class="contact linkedin">
+                        <img src="/static/images/linkedin.png" alt="Linkedin" class="social" />
+                        <span>
+                            <a href="https://www.linkedin.com/in/dunai/">linkedin.com/in/dunai/</a>
+                        </span>
+                    </div>
+                    <div class="contact email">
+                        <img src="/static/images/email.png" alt="Email" class="social" />
+                        <span>
+                            <a href="mailto:a@dun.ai">a@dun.ai</a>
+                        </span>
+                    </div>
+                    <div class="contact phone">
+                        <img src="/static/images/phone.png" alt="Phone" class="social" />
+                        <span>
+                            <a href="tel:+380633700097">+380633700097</a>
+                        </span>
+                    </div>
+                    <div class="contact boring">
+                        <div class="social text-icon">:V</div>
+                        <span>
+                            Get a <a id="boring" href="#">boring printable version</a> of my resume.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="popup nohl">
+            <div class="popup-content nohl">
+            </div>
+            <div class="popup-note">
+                <span data-if-desktop>Click</span><span data-if-mobile>Tap</span> anywhere to close.
+            </div>
+        </a>
+        <script>
+            window.addEventListener('load', function() {
+                // Misc helpers
+                window.$ = selector => document.querySelector(selector);
+                window.$$ = selector => Array.prototype.slice.call(document.querySelectorAll(selector));
+                window.isMobile = 'ontouchstart' in window;
+                window.clamp = (smin, smax, dmin, dmax, value) => {
+                    var k = (value - smin) / (smax - smin);
+                    return dmin + (dmax - dmin) * k;
+                };
+
+                // Pop-up
+                var popup = $('.popup');
+                var popupContent = $('.popup .popup-content');
+                var stopPropagation = e => e.stopPropagation();
+                $$('.feature').forEach(el => {
+                    el.addEventListener('click', e => {
+                        var url = e.currentTarget.getAttribute('data-image-url');
+                        e.preventDefault();
+                        popup.setAttribute('class', 'popup visible');
+                        popupContent.style.backgroundImage = 'url(' + url + ')';
+                    });
+                });
+                var hidePopup = e => {
+                    popup.setAttribute('class', 'popup');
+                    e.preventDefault();
+                };
+                popup.addEventListener('click', hidePopup);
+                window.addEventListener('keydown', e => (e.keyCode == 27 || e.which == 27) ? hidePopup() : 0);
+                $$('[data-if-desktop],[data-if-mobile]').filter(
+                    el => el.hasAttribute(isMobile ? 'data-if-desktop' : 'data-if-mobile')
+                ).forEach(
+                    el => el.parentNode.removeChild(el)
+                );
+
+                $('#boring').addEventListener('click', e => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    window.print();
+                    return false;
+                });
+
+                // Tooltips
+                tippy('[title]', {
+                    animation: 'perspective',
+                    duration: 90,
+                    size: 'large',
+                    theme: 'molokai',
+                    performance: true
+                });
+
+                /*
+                const urls = $$('.feature').map(
+                    feature => feature.getAttribute('data-thumbnail-url')
+                ).filter(
+                    url => url
+                );
+                var [backBuffer, frontBuffer] = $$('.splash-bg');
+                const fadeIn = () => {
+                    frontBuffer.style.backgroundImage = 'url(' + urls[0] + ')';
+                    frontBuffer.setAttribute('class', 'splash-bg visible');
+                    urls.push(urls.shift());
+                    window.setTimeout(fadeOut, 150);
+                };
+                const fadeOut = () => {
+                    backBuffer.style.backgroundImage = 'url(' + urls[0] + ')';
+                    frontBuffer.setAttribute('class', 'splash-bg');
+                    urls.push(urls.shift());
+                    window.setTimeout(fadeIn, 150);
+                };
+                var loadCounter = urls.length;
+                urls.forEach(url => {
+                    const image = new Image();
+                    image.src = url;
+                    image.onload = () => {
+                        loadCounter--;
+                        if (!loadCounter) {
+                            fadeIn();
+                        }
+                    };
+                });
+                */
+                $('.text-icon').addEventListener('click', () => window.open(atob('aHR0cHM6Ly94a2NkLmNvbS8xNjcwLw=='), '_blank'));
+            });
+        </script>
+        <script src="https://unpkg.com/tippy.js@3.2.0/dist/tippy.all.min.js"></script>
+    </body>
+</html>
+
+

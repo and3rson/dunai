@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?v2woe7');
+  src:  url('../fonts/icomoon.eot?v2woe7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?v2woe7') format('truetype'),
+    url('../fonts/icomoon.woff?v2woe7') format('woff'),
+    url('../fonts/icomoon.svg?v2woe7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nodejs:before {
+  content: "\eb6a";
+}
+.icon-aws:before {
+  content: "\e603";
+}
+.icon-redis:before {
+  content: "\e607";
+}
+.icon-android:before {
+  content: "\e60e";
+}
+.icon-heroku:before {
+  content: "\e60f";
+}
+.icon-go:before {
+  content: "\e610";
+}
+.icon-docker:before {
+  content: "\e61f";
+}
+.icon-backbonejs:before {
+  content: "\e62d";
+}
+.icon-cplusplus:before {
+  content: "\e635";
+}
+.icon-csharp:before {
+  content: "\e637";
+}
+.icon-web:before {
+  content: "\e7f6";
+}
+.icon-html5:before {
+  content: "\e7f7";
+}
+.icon-java:before {
+  content: "\e842";
+}
+.icon-javascript:before {
+  content: "\e845";
+}
+.icon-linux:before {
+  content: "\eb1c";
+}
+.icon-mongodb:before {
+  content: "\eb44";
+}
+.icon-mysql:before {
+  content: "\eb61";
+}
+.icon-php:before {
+  content: "\eb71";
+}
+.icon-postgresql:before {
+  content: "\eb7d";
+}
+.icon-python:before {
+  content: "\eb89";
+}
+.icon-asterisk:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-consul:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-flask:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-network:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-qt:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-rabbitmq:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-solr:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-twisted:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-django:before {
+  content: "\e90d";
+}
+.icon-cpp:before {
+  content: "\e900";
+}
+.icon-gtk:before {
+  content: "\e905";
+}
+.icon-microservices:before {
+  content: "\e901";
+}
+.icon-mssql:before {
+  content: "\e964";
+}
+.icon-security:before {
+  content: "\e9b4";
+}

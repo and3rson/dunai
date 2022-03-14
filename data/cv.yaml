@@ -1,0 +1,296 @@
+bio:
+  - >
+      I love clean reusable code, lightweight web, distributed architectures, shells, vim, tmux, awesomewm, drones, IoT, Doom game series, UT99, multiplayer game hacking, OpenSource, heavy/thrash/stoner metal, traveling, motorcycles (I own Kawasaki Versys 650/2011), snowboarding & random adventures.
+  - >
+      I like to pursuit fresh ideas, to be precise in my profession & to be verbose in communication.
+  - >
+      I've been coding for around 14 years and experienced a lot of technologies. My belief is that every task requires a specific set of tools and technologies in order to be solved efficiently. That's why I often switch mainly between Python, Go, JS, C, and Java (sorted by experience.)
+companies:
+  - name: Holmusk
+    icon: images/holmusk.png
+    color: '#1646B5'
+    role: Software Architect
+    technologies:
+      - Python: python
+      - Flask: flask
+      - Redis: redis
+      - PostgreSQL: postgresql
+      - ReactJS: javascript
+      - Redistributable images: microservices
+      - Docker: docker
+      - AWS: linux
+      - Linux administration: linux
+      - Terraform: linux
+      - Virtualbox/VMWave: linux
+      - Networking & security: security
+    info: |
+      Mental health disorders remain the highest unmet medical need, surpassing cardiovascular disease, diabetes and cancer. Cumulative economic burden exceed 16 Trillion USD in direct and indirect costs. At Holmusk, we are addressing this problem by building the world's largest Real-World Evidence (RWE) platform for mental health to deliver clinical and regulatory grade evidence to all major stakeholders of the healthcare ecosystem.
+    description: |
+      Leading development of two projects: a highly available data interfacing service with support of HL7/FHIR payloads for data ingestion and an on-premise application that anonimyzes PHI-sensitive data for further distribution to researchers according to HIPAA requirements.
+    start: !!timestamp 2020-05-01
+    end: !!timestamp 2022-02-01
+
+  - name: Micah Group
+    icon: images/micahgroup.png
+    color: '#F9DD7F'
+    role: Software Architect
+    technologies:
+      - Python: python
+      - Django: django
+      - Redis: redis
+      - PostgreSQL: postgresql
+      - Service architecture: microservices
+      - Docker: docker
+      - Kubernetes: linux
+      - Google Cloud: linux
+      - Keras: microservices
+      - TensorFlow: microservices
+      - Linux administration: linux
+      - Networking & security: security
+    info: |
+      Micah Group is a financial document processing & decision making automation system for companies that provide loans to their customers.
+    description: |
+      I built a multi-service architecture & developed functionality for an automated document processing, OCR recognition, neural network processing, unpredicted structured data processing & feature extraction from financial statement documents with Python, Django, Keras & TensorFlow.
+    start: !!timestamp 2018-04-01
+    end: !!timestamp 2019-12-01
+
+  - name: T1DExchange (UnitIO)
+    icon: images/t1dexchange.png
+    color: '#00A9D0'
+    role: Software Architect
+    technologies:
+      - Python: python
+      - Django: django
+      - NodeJS: nodejs
+      - RabbitMQ: rabbitmq
+      - PostgreSQL: postgresql
+      - MongoDB: mongodb
+      - Service architecture: microservices
+      - Docker: docker
+      - Consul: consul
+      - AWS: aws
+      - Linux administration: linux
+      - Networking & security: security
+    info: |
+      T1DExchange is a Biological research project for people with type 1 diabetes.
+    description: |
+      I created entire infrastructure from scratch that automates collection, processing, managing and delivering of biological & PHI data.
+    start: !!timestamp 2016-06-01
+    end: !!timestamp 2018-04-01
+
+  - name: Red e App
+    icon: images/redeapp.png
+    color: '#DC1E33'
+    role: Back-End Architect
+    technologies:
+      - Python: python
+      - Django: django
+      - NodeJS: nodejs
+      - RabbitMQ: rabbitmq
+      - PostgreSQL: postgresql
+      - Microservices: microservices
+      - Docker: docker
+      - Redis: redis
+      - Consul: consul
+      - AWS: aws
+      - Linux administration: linux
+      - Networking & security: security
+    info: |
+      A distributed communication system that provides the corporate messaging platform with advanced management tools built for large enterprises.
+    description: |
+      I took lead in planning & building entire infrastructure and component architecture from scratch.
+      I developed backend for services in Python & NodeJS.
+      I automating testing & deployment processes with Docker & AWS.
+      My architecture is running decoupled components that play together thanks to RabbitMQ, Consul & Redis.
+    start: !!timestamp 2016-05-01
+    end: !!timestamp 2017-06-01
+
+  - name: Kultivo.com
+    icon: images/kultivo.png
+    color: '#0469FF'
+    role: Senior Python Dev
+    technologies:
+      - Python: python
+      - Django: django
+      - JS: javascript
+      - Web: web
+      - PostgreSQL: postgresql
+    info: |
+      Marketplace for courses as well as one-shot training sessions.
+    description: |
+      I created backend code and templates for profile management.
+    start: !!timestamp 2015-07-01
+    end: !!timestamp 2016-01-01
+
+  - name: N1ght.com
+    icon: images/n1ght.png
+    color: '#F8F5EB'
+    bgcolor: '#003300'
+    role: Senior Python Dev
+    technologies:
+      - Python: python
+      - Django: django
+      - Java: java
+      - Android: android
+      - JS: javascript
+      - Web: web
+      - PostgreSQL: postgresql
+      - Heroku: heroku
+    info: |
+      "A service that provides centralized access to aggregated data about events, festivals & parties around the globe."
+    description: |
+      I took lead in creating Python backend & frontend. I also created a Java Android app from scratch.
+    start: !!timestamp 2014-11-01
+    end: !!timestamp 2015-07-01
+
+  - name: OspreyData, Inc.
+    icon: images/ospreydata.png
+    color: '#0194D5'
+    role: Senior Python Dev
+    technologies:
+      - Python: python
+      - Django: django
+      - MySQL: mysql
+    info: |
+      The OspreyData platform is designed from the ground up with sensor analytics in mind, focusing on storing and manipulating time series data and modeling complex relationships between high-resolution signals.
+    description: |
+      I developed a backend that gathers & processes data from sensors installed on industrial enterprises, in particular - oil factories.
+    start: !!timestamp 2014-09-01
+    end: !!timestamp 2014-10-01
+
+  - name: qBeats, Inc.
+    icon: images/qbeats.png
+    color: '#DF0700'
+    role: Senior Full-Stack Dev
+    technologies:
+      - Python: python
+      - Django: django
+      - Twisted: twisted
+      - C++: cplusplus
+      - JS: javascript
+      - Web: web
+      - Backbone: backbonejs
+      - Qt: qt
+      - Solr: solr
+      - PostgreSQL: postgresql
+      - MongoDB: mongodb
+      - RabbitMQ: rabbitmq
+    info: |
+      The first company in the world to develop real-time dynamic pricing technology for digital information.
+    description: |
+      I took part in building a highly available application backend.
+      I wired things up using Django, Twisted, Solr & RabbitMQ. We were storing data in PostgreSQL & Mongo.
+      I implemented missing functionality for user channels in desktop C++ application that was written in Qt.
+    start: !!timestamp 2013-08-01
+    end: !!timestamp 2014-06-01
+
+  - name: Axiomatics
+    icon: images/axiomatics.png
+    color: '#D4E16C'
+    role: Senior Webmaster
+    technologies:
+      - PHP: php
+      - MySQL: mysql
+      - Linux administration: linux
+      - Networking & security: security
+    info: |
+      Axiomatics provides fine-grained access control and ABAC solutions for IT enterprises.
+    description: |
+      I administered three cooperating Joomla-driven portals.
+      I implemented Single Sign-On for thousands of users that were registered on those three websites.
+      It took some time to implement a bulletproof logic for allowing users to register on any of these portals
+      and then easily switch between the three of them.
+      I also did numerous updates to the frontend and administrator portal backend.
+    start: !!timestamp 2013-02-01
+    end: !!timestamp 2013-08-01
+
+  - name: PrimoCollect
+    icon: images/primocollect.png
+    color: '#F2F2F2'
+    bgcolor: '#444444'
+    role: Technical Lead
+    technologies:
+      - Python: python
+      - Flask: flask
+      - GTK: gtk
+      - Java: java
+      - C++: cplusplus
+      - Web: web
+      - JS: javascript
+      - Qt: qt
+      - PostgreSQL: postgresql
+      - MS SQL: mssql
+      - SIP: asterisk
+      - Linux administration: linux
+      - Networking & security: security
+    info: |
+      A collection agency, i. e. a company that recover funds that are past due or accounts that are in default.
+    description: |
+      I created customer area portal from scratch (backend + frontend). It was an application that granted privileged
+      users to access & manage their financial information using internet.
+      I also replaced existing call center operator software with a new one that allowed us
+      to orchestrate 350 internal workspaces remotely and easily perform mass OTA updates.
+      I refactored existing internal dial plan management system that used asterisk SIP (Asterisk) and which handled
+      over 1,000,000 phone calls a month.
+      I eliminated existing memory usage issues & file descriptor (that were initially caused by abusing threads) leaks
+      which allowed us to run the server continuously for months without having to restart it every 20 minutes as before.
+      I also developed a fork of "Twinkle" SIP client (written in Qt) that we called "Sparkle". It was using a
+      modified & simplified UI and gave the operators more control over their calls.
+    start: !!timestamp 2011-01-01
+    end: !!timestamp 2013-02-01
+
+  - name: Freelancer.com
+    icon: images/freelancer2.png
+    color: '#0092CE'
+    role: Full Stack Dev
+    technologies:
+      - PHP: php
+      - C#: csharp
+      - C++: cplusplus
+      - Web: web
+      - JS: javascript
+      - Linux administration: linux
+    info: |
+      A global crowdsourcing marketplace website.
+    description: |
+      I completed over 30 projects during this period including: numerous
+      SPA websites developed in PHP & JS/HTML/CSS, student management software for schools in Essex (Englang) and
+      even a space invaders game written in C# for a student who didn't want to do it himself
+      and preferred to pay someone else to do it.
+    start: !!timestamp 2007-04-01
+    end: !!timestamp 2012-01-01
+
+  - name: Airbites
+    icon: images/airbites.png
+    color: '#B2B2B2'
+    role: Back-End Dev
+    technologies:
+      - PHP: php
+      - Web: web
+      - JS: javascript
+      - MySQL: mysql
+      - Linux administration: linux
+      - Networking & security: security
+    info: |
+      Ukrainian internet service provider (acquired by Volia ISP in 2017.)
+    description: |
+      I created a social network backend from scratch for a local ISP. I've set up a dedicated server from scratch running FreeBSD.
+      The project was running for over 9 years and had around 45.000 members before it was shutdown. It was one of my longest-living children.
+    start: !!timestamp 2007-02-01
+    end: !!timestamp 2007-11-01
+
+misc:
+  - I love terminals.
+  - I use Vim & PyCharm as development environments.
+  - I use Python & NodeJS most of the time.
+  - I sometimes need to use Go and C (and Java when building Android apps).
+  - I love tiling WMs (qTile & AwesomeWM).
+  - I love ESP8266 & IoT.
+  - I believe that preserving low complexity of large project's components and respecting the law of Demeter is the key to maintainable system.
+  - I love shaders & 3D graphics.
+  - I love modding for HL, CS & Dota.
+  - I love trebuchets because they are the superior siege weapon.
+  - I've spent over 9000 hours in Unreal Tournament 1999, Hitman 1-3, Half-Life (& mods), CS:GO, Hotline Miami, Dota & C&C.
+  - I used to be Steam & Dota 2 translator and co-organizer & broadcaster of West-Ukrainian Dota 2 tournaments
+  - I used to develop cheats for CS:GO (own wallhack, modified esp hack, own flashbang hack), although I've never used them in ranked games.
+  - I had to deal with COBOL & DB/2 in the past. (Hi there, IBM System z!)
