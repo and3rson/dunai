@@ -79,7 +79,7 @@
                                         {{ range $technology := $company.Technologies }}
                                             <span class="technology">
                                                 {{ range $key, $value := $technology }}
-                                                <i class="icon icon-{{ $value }}" title="{{ $key }}" data-tippy="{{ $key }}"></i>
+                                                <i class="icon icon-{{ $value }}" data-tippy-content="{{ $key }}"></i>
                                                 {{ end }}
                                             </span>
                                         {{ end }}
@@ -221,9 +221,8 @@
                 });
 
                 // Tooltips
-                tippy('[title]', {
-                    animation: 'perspective',
-                    duration: 90,
+                tippy('[data-tippy-content]', {
+                    duration: [150, 150],
                     size: 'large',
                     theme: 'molokai',
                     performance: true
@@ -263,7 +262,8 @@
                 $('.text-icon').addEventListener('click', () => window.open(atob('aHR0cHM6Ly94a2NkLmNvbS8xNjcwLw=='), '_blank'));
             });
         </script>
-        <script src="https://unpkg.com/tippy.js@3.2.0/dist/tippy.all.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
     </body>
 </html>
 
