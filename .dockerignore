@@ -1,3 +1,4 @@
-.go
-.git
-certs/*
+/.go
+/.git
+/certs/*
+/tmp

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/signintech/gopdf"
+	// "github.com/signintech/gopdf"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"time"
@@ -46,15 +46,15 @@ func ReadCV() (*CV, error) {
 	return cv, nil
 }
 
-func (cv *CV) GeneratePDF() (*gopdf.GoPdf, error) {
-	pdf := gopdf.GoPdf{}
-	pdf.Start(gopdf.Config{PageSize: *gopdf.PageSizeA4})
-	pdf.AddPage()
-	err := pdf.AddTTFFont("dejavu", "./data/DejaVuSans.ttf")
-	if err != nil {
-		return nil, err
-	}
-	pdf.SetFont("dejavu", "", 14)
-	pdf.Cell(nil, "TODO")
-	return &pdf, nil
-}
+// func (cv *CV) GeneratePDF() (*gopdf.GoPdf, error) {
+// 	pdf := gopdf.GoPdf{}
+// 	pdf.Start(gopdf.Config{PageSize: *gopdf.PageSizeA4})
+// 	pdf.AddPage()
+// 	err := pdf.AddTTFFont("dejavu", "./data/DejaVuSans.ttf")
+// 	if err != nil {
+// 		return nil, err
+// 	}
+// 	pdf.SetFont("dejavu", "", 14)
+// 	pdf.Cell(nil, "TODO")
+// 	return &pdf, nil
+// }
