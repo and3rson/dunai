@@ -190,6 +190,7 @@ h4 {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     font-weight: 300;
+    page-break-before: always;
 }
 
 .section-head h1 {
