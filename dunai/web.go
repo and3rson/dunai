@@ -1,4 +1,4 @@
-package main
+package dunai
 
 import (
 	"fmt"
@@ -23,29 +23,26 @@ func MustLoadTemplate(name string) *htmlTemplate.Template {
 	return template
 }
 
-func CreateHTTPServer() *http.Server {
+func CreateHTTPServer(cv *CV) *http.Server {
 	return &http.Server{
 		Addr:    "0.0.0.0:8888",
-		Handler: CreateWebRouter(),
+		Handler: CreateWebRouter(cv),
 	}
 }
 
-func CreateWebRouter() *mux.Router {
+func CreateWebRouter(cv *CV) *mux.Router {
 	webMux := mux.NewRouter()
 	webMux.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
-		cv, err := ReadCV()
-		if err != nil {
-			return
-		}
-		var projects []Project
-		db.Order("\"order\"").Find(&projects)
+		// var projects []Project
+		// db.Order("\"order\"").Find(&projects)
 		rw.Header().Add("Content-Type", "text/html; charset=utf-8")
 		rw.WriteHeader(200)
 		// rw.Write([]byte("Test\n"))
-		IndexTemplate.Execute(rw, map[string]interface{}{
-			"cv":       cv,
-			"projects": projects,
-		})
+		if err := IndexTemplate.Execute(rw, map[string]interface{}{
+			"cv": cv,
+		}); err != nil {
+			log.Printf("render template: %v", err)
+		}
 	})
 	webMux.PathPrefix("/static").Handler(http.FileServer(http.FS(static)))
 	return webMux

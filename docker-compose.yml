@@ -6,20 +6,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      POSTGRES_URI: psql://dunai:dunai@db/dunai
+    # environment:
+    #   POSTGRES_URI: psql://dunai:dunai@db/dunai
     restart: always
     volumes:
       - ./certs:/var/lib/gemini/certs
     ports:
       - 8888:8888
       - 1965:1965
-    depends_on:
-      - db
+    # depends_on:
+    #   - db
 
-  db:
-    image: postgres:9.6
-    environment:
-      POSTGRES_DB: dunai
-      POSTGRES_USER: dunai
-      POSTGRES_PASSWORD: dunai
+  # db:
+  #   image: postgres:9.6
+  #   environment:
+  #     POSTGRES_DB: dunai
+  #     POSTGRES_USER: dunai
+  #     POSTGRES_PASSWORD: dunai

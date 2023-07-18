@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/and3rson/dunai/dunai"
 	"log"
 	"os"
 	"os/signal"
@@ -9,27 +10,33 @@ import (
 )
 
 func main() {
-	if err := LoadConfig(); err != nil {
+	if err := dunai.LoadConfig(); err != nil {
 		panic(err)
 	}
-	if err := RepoInit(); err != nil {
+	// if err := RepoInit(); err != nil {
+	// 	panic(err)
+	// }
+
+	// CV
+	cv, err := dunai.ReadCV()
+	if err != nil {
 		panic(err)
 	}
 
 	// HTTP server
-	httpServer := CreateHTTPServer()
+	httpServer := dunai.CreateHTTPServer(cv)
 
 	// Gemini server
-	gServer := CreateGeminiServer()
+	gServer := dunai.CreateGeminiServer(cv)
 
 	// Background task
 	go func() {
-		UpdateStars()
+		dunai.UpdateStars(cv)
 		ticker := time.NewTicker(1 * time.Hour)
 		for {
 			select {
 			case <-ticker.C:
-				UpdateStars()
+				dunai.UpdateStars(cv)
 			}
 		}
 	}()

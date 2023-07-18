@@ -1,4 +1,4 @@
-package main
+package dunai
 
 import (
 	"fmt"
@@ -9,13 +9,11 @@ import (
 	"strconv"
 )
 
-func UpdateStars() {
-	var projects []Project
-	db.Order("\"order\"").Find(&projects)
+func UpdateStars(cv *CV) {
 	expr := regexp.MustCompile(`.*github.com/([a-zA-Z0-9_\.-]+)/([a-zA-Z0-9_\.-]+)`)
 	star_expr := regexp.MustCompile(`(\d+) users starred`)
-	for _, project := range projects {
-		matches := expr.FindStringSubmatch(project.Link)
+	for index, project := range cv.Projects {
+		matches := expr.FindStringSubmatch(project.Url)
 		if len(matches) != 3 {
 			continue
 		}
@@ -33,7 +31,6 @@ func UpdateStars() {
 		}
 		stars, _ := strconv.Atoi(star_match[1])
 		fmt.Println(stars)
-		project.Stars = stars
-		db.Save(&project)
+		cv.Projects[index].Stars = stars
 	}
 }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Andrew Dunai</title>
+    <style type="text/css">
+        html,
+        body {
+            font-family: sans-serif;
+            background: #111;
+            color: #DDD;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        strong {
+            color: #FFF;
+        }
+
+        em {
+            color: #888;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: serif;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        ul.timeline {
+            padding-left: 1em;
+            font-size: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        ul.timeline li {
+            vertical-align: top;
+            box-sizing: border-box;
+            margin: 0;
+            font-size: 1rem;
+            list-style: none;
+            padding: 0 1rem 0 2.5em;
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 2em;
+            margin-bottom: 2em;
+            display: inline-block;
+            width: 50%;
+        }
+
+        ul.timeline p.tags {
+            font-size: 0.8rem;
+        }
+
+        ul.projects {
+            padding-left: 1em;
+            font-size: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        ul.projects li {
+            vertical-align: top;
+            box-sizing: border-box;
+            margin: 0;
+            font-size: 1rem;
+            padding: 0 1rem 0 0;
+            margin-bottom: 2em;
+            display: inline-block;
+            width: 33.3333%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Andrew Dunai</h1>
+
+    <em>Pwning teh internetz since 2007</em>
+
+    <h2>About me</h2>
+
+    <ul>
+        {{ range $paragraph := .cv.Bio -}}
+        <li>{{- $paragraph }}</li>
+        {{ end -}}
+    </ul>
+    <p>Psst: this website is avaiable via <a href="https://gemini.circumlunar.space/">gemini</a> at <a
+            href="gemini://dun.ai/">gemini://dun.ai/</a>. Let's build a better, safer &amp; faster web together!</p>
+
+    <h2>Timeline</h2>
+    <ul class="timeline">
+        {{ range $company := .cv.Companies }}
+        <li style="background-image: url(/static/{{ $company.Icon }})">
+            <div><strong style="color: {{ $company.Color }}">{{ $company.Name }} - {{ $company.Role }}</strong>
+                <em>({{ $company.PrettyStart }} - {{ if $company.End }} {{ $company.PrettyEnd }}{{ else }}now{{ end
+                    }})</em>
+            </div>
+            <p>
+                {{ $company.Info }}
+            </p>
+            <p class="tags">
+                {{ range $i, $technology := $company.Technologies -}}
+                {{ if $i }} / {{ end }}{{ range $key, $value := $technology }}{{ $key }}{{ end }}
+                {{- end }}
+            </p>
+        </li>
+        {{ end }}
+    </ul>
+
+    <h2>Some of my public contributions</h2>
+    <ul class="projects">
+        {{ range $project := .cv.Projects }}
+        <li>
+            <a href="{{ $project.Url }}">{{ $project.Name }}</a>{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end
+            }}
+            <p>{{ $project.Description }}</p>
+        </li>
+        {{ end }}
+    </ul>
+
+    <h2>Contacts</h2>
+
+    <ul>
+        <li><a href="https://www.linkedin.com/in/dunai/">Linkedin: linkedin.com/in/dunai</a></li>
+        <li><a href="mailto:a@dun.ai">Email: a@dun.ai</a></li>
+        <li><a href="tel:+380633700097">Phone: +38063370009</a></li>
+    </ul>
+</body>
+
+</html>

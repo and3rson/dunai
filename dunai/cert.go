@@ -1,8 +1,9 @@
+//go:build ignore
 // +build ignore
 
 // This example illustrates a certificate generation tool.
 
-package main
+package dunai
 
 import (
 	"crypto/x509/pkix"

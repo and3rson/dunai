@@ -1,10 +1,9 @@
-package main
+package dunai
 
 import (
 	"fmt"
 	// "github.com/signintech/gopdf"
 	"gopkg.in/yaml.v2"
-	"io/ioutil"
 	"time"
 )
 
@@ -20,9 +19,17 @@ type Company struct {
 	End          *time.Time          `yaml:"end"`
 }
 
+type Project struct {
+	Name        string `yaml:"name"`
+	Url         string `yaml:"url"`
+	Description string `yaml:"description"`
+	Stars       int    `yaml:"stars"`
+}
+
 type CV struct {
 	Bio       []string  `yaml:"bio"`
 	Companies []Company `yaml:"companies"`
+	Projects  []Project `yaml:"projects"`
 	Misc      []string
 }
 
@@ -36,11 +43,11 @@ func (c Company) PrettyEnd() string {
 
 func ReadCV() (*CV, error) {
 	cv := &CV{}
-	data, err := ioutil.ReadFile("./data/cv.yaml")
-	if err != nil {
-		return nil, err
-	}
-	if err := yaml.Unmarshal(data, cv); err != nil {
+	// data, err := ioutil.ReadFile("./data/cv.yaml")
+	// if err != nil {
+	// 	return nil, err
+	// }
+	if err := yaml.Unmarshal(cvYaml, cv); err != nil {
 		return nil, err
 	}
 	return cv, nil

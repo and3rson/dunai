@@ -1,4 +1,4 @@
-package main
+package dunai
 
 import (
 	"net/url"

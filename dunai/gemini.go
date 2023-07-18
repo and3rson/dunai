@@ -1,4 +1,4 @@
-package main
+package dunai
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"git.sr.ht/~adnano/go-gemini/certificate"
 )
 
-func CreateGeminiServer() *gemini.Server {
+func CreateGeminiServer(cv *CV) *gemini.Server {
 	certificates := &certificate.Store{}
 	certificates.Register("dun.ai")
 	if err := certificates.Load("/var/lib/gemini/certs"); err != nil {
@@ -18,7 +18,7 @@ func CreateGeminiServer() *gemini.Server {
 	}
 
 	gServer := &gemini.Server{
-		Handler:        gemini.LoggingMiddleware(CreateGeminiMux()),
+		Handler:        gemini.LoggingMiddleware(CreateGeminiMux(cv)),
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
 		GetCertificate: certificates.Get,
@@ -26,20 +26,17 @@ func CreateGeminiServer() *gemini.Server {
 	return gServer
 }
 
-func CreateGeminiMux() *gemini.Mux {
+func CreateGeminiMux(cv *CV) *gemini.Mux {
 	geminiMux := &gemini.Mux{}
 	gIndex := textTemplate.Must(textTemplate.ParseFS(templates, "templates/index.gmi"))
 	geminiMux.HandleFunc("/", func(c context.Context, rw gemini.ResponseWriter, r *gemini.Request) {
-		cv, err := ReadCV()
-		if err != nil {
-			return
-		}
-		var projects []Project
-		db.Order("\"order\"").Find(&projects)
+		// var projects []Project
+		// db.Order("\"order\"").Find(&projects)
 		gIndex.Execute(rw, map[string]interface{}{
-			"cv":       cv,
-			"projects": projects,
+			"cv": cv,
+			// "projects": projects,
 		})
+
 		// fmt.Fprintln(rw, "Welcome!")
 		// fmt.Fprintln(rw)
 		// fmt.Fprintln(rw, "=> /projects My projects")

@@ -278,13 +278,58 @@ companies:
       The project was running for over 9 years and had around 45.000 members before it was shutdown. It was one of my longest-living children.
     start: !!timestamp 2007-02-01
     end: !!timestamp 2007-11-01
-
+projects:
+  - name: urwid
+    url: https://github.com/urwid/urwid
+    description: I'm currently maintaining this awesome library. It's a framework for building terminal-based user interfaces. I love terminals!
+    stars: 2000
+  - name: impress.js
+    url: https://github.com/impress/impress.js
+    description: I've implemented touch & swipe support for slide transitions. After few years of decay it's now alive and well again!
+    stars: 35900
+  - name: three.js
+    url: https://github.com/mrdoob/three.js
+    description: I contributed a script that slices exported 3DS Max model animations into named sequences to allow using multiple animations within single model file. 3DS Max + THREE.js now rock even more!
+    stars: 64099
+  - name: qtile
+    url: https://github.com/qtile/qtile
+    description: Pure Python WM. I contributed some widgets & bug fixes and obviously broke some stuff that I also fixed thereafter.
+    stars: 2100
+  - name: django-extensions
+    url: https://github.com/django-extensions/django-extensions
+    description: I wrote Django management command to perform PostgreSQL database reinitialization without closing active connections.
+    stars: 5000
+  - name: and3rson / nineapi
+    url: https://github.com/and3rson/nineapi
+    description: My awesome progress of reverse-engineering the terrible 9GAG API. Yes, there *is* a 9GAG API. It's just well hidden.
+    stars: 39
+  - name: and3rson / django-searchable-select
+    url: https://github.com/and3rson/django-searchable-select
+    description: My implementation of a select field for Django admin panel with backend-side filtering - because life is too short to scroll.
+    stars: 87
+  - name: and3rson / clay
+    url: https://github.com/and3rson/clay
+    description: My own terminal-based player for Google Play Music. Built with passion using awesome urwid, gmusicapi and libvlc libraries."
+    stars: 162
+  - name: and3rson / enlightenment
+    url: https://github.com/and3rson/enlightenment
+    description: I wanted some real-time 2D fragment shader lighting in Phaser. I ended up writing my own in GLSL.
+    stars: 6
+  - name: and3rson / isc
+    url: https://github.com/and3rson/isc
+    description: ISC is a missing microservices (RPC & Pub/Sub) framework for Python including support of Django & Flask. It also supports NodeJS & Java. It's been battle-scarred in numerous commercial projects.
+    stars: 8
+  - name: godot
+    url: https://github.com/godotengine/godot
+    description: Bugfix for string marshalling & financial sponsorship.
+    stars: 33800
 misc:
   - I love terminals.
   - I use Vim & PyCharm as development environments.
   - I use Python & NodeJS most of the time.
   - I sometimes need to use Go and C (and Java when building Android apps).
   - I love tiling WMs (qTile & AwesomeWM).
+  - I love retro computers & 6502 CPU.
   - I love ESP8266 & IoT.
   - I believe that preserving low complexity of large project's components and respecting the law of Demeter is the key to maintainable system.
   - I love shaders & 3D graphics.
