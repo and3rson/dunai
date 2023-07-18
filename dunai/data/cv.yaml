@@ -7,7 +7,7 @@ bio:
       I've been coding for around 14 years and experienced a lot of technologies. My belief is that every task requires a specific set of tools and technologies in order to be solved efficiently. That's why I often switch mainly between Python, Go, JS, C, and Java (sorted by experience.)
 companies:
   - name: Holmusk
-    icon: images/holmusk.png
+    icon: images/holmusk_64.png
     color: '#1646B5'
     role: Software Architect
     technologies:
@@ -31,7 +31,7 @@ companies:
     end: !!timestamp 2022-02-01
 
   - name: Micah Group
-    icon: images/micahgroup.png
+    icon: images/micahgroup_64.png
     color: '#F9DD7F'
     role: Software Architect
     technologies:
@@ -55,7 +55,7 @@ companies:
     end: !!timestamp 2019-12-01
 
   - name: T1DExchange (UnitIO)
-    icon: images/t1dexchange.png
+    icon: images/t1dexchange_64.png
     color: '#00A9D0'
     role: Software Architect
     technologies:
@@ -79,7 +79,7 @@ companies:
     end: !!timestamp 2018-04-01
 
   - name: Red e App
-    icon: images/redeapp.png
+    icon: images/redeapp_64.png
     color: '#DC1E33'
     role: Back-End Architect
     technologies:
@@ -106,7 +106,7 @@ companies:
     end: !!timestamp 2017-06-01
 
   - name: Kultivo.com
-    icon: images/kultivo.png
+    icon: images/kultivo_64.png
     color: '#0469FF'
     role: Senior Python Dev
     technologies:
@@ -123,7 +123,7 @@ companies:
     end: !!timestamp 2016-01-01
 
   - name: N1ght.com
-    icon: images/n1ght.png
+    icon: images/n1ght_64.png
     color: '#F8F5EB'
     bgcolor: '#003300'
     role: Senior Python Dev
@@ -144,7 +144,7 @@ companies:
     end: !!timestamp 2015-07-01
 
   - name: OspreyData, Inc.
-    icon: images/ospreydata.png
+    icon: images/ospreydata_64.png
     color: '#0194D5'
     role: Senior Python Dev
     technologies:
@@ -159,7 +159,7 @@ companies:
     end: !!timestamp 2014-10-01
 
   - name: qBeats, Inc.
-    icon: images/qbeats.png
+    icon: images/qbeats_64.png
     color: '#DF0700'
     role: Senior Full-Stack Dev
     technologies:
@@ -185,7 +185,7 @@ companies:
     end: !!timestamp 2014-06-01
 
   - name: Axiomatics
-    icon: images/axiomatics.png
+    icon: images/axiomatics_64.png
     color: '#D4E16C'
     role: Senior Webmaster
     technologies:
@@ -205,7 +205,7 @@ companies:
     end: !!timestamp 2013-08-01
 
   - name: PrimoCollect
-    icon: images/primocollect.png
+    icon: images/primocollect_64.png
     color: '#F2F2F2'
     bgcolor: '#444444'
     role: Technical Lead
@@ -240,7 +240,7 @@ companies:
     end: !!timestamp 2013-02-01
 
   - name: Freelancer.com
-    icon: images/freelancer2.png
+    icon: images/freelancer2_64.png
     color: '#0092CE'
     role: Full Stack Dev
     technologies:
@@ -261,7 +261,7 @@ companies:
     end: !!timestamp 2012-01-01
 
   - name: Airbites
-    icon: images/airbites.png
+    icon: images/airbites_64.png
     color: '#B2B2B2'
     role: Back-End Dev
     technologies:
