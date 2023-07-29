@@ -128,12 +128,22 @@
         {{ end }}
     </ul>
 
-    <h2>Some of my public contributions</h2>
+    <h2>Software contributions</h2>
     <ul class="projects">
         {{ range $project := .cv.Projects }}
         <li>
             <a href="{{ $project.Url }}">{{ $project.Name }}</a>{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end
             }}
+            <p>{{ $project.Description }}</p>
+        </li>
+        {{ end }}
+    </ul>
+
+    <h2>Personal hardware projects</h2>
+    <ul class="projects">
+        {{ range $project := .cv.Hardware }}
+        <li>
+            <a href="{{ $project.Url }}">{{ $project.Name }}</a>
             <p>{{ $project.Description }}</p>
         </li>
         {{ end }}

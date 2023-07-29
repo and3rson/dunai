@@ -26,10 +26,17 @@ type Project struct {
 	Stars       int    `yaml:"stars"`
 }
 
+type Hardware struct {
+	Name        string `yaml:"name"`
+	Url         string `yaml:"url"`
+	Description string `yaml:"description"`
+}
+
 type CV struct {
-	Bio       []string  `yaml:"bio"`
-	Companies []Company `yaml:"companies"`
-	Projects  []Project `yaml:"projects"`
+	Bio       []string   `yaml:"bio"`
+	Companies []Company  `yaml:"companies"`
+	Projects  []Project  `yaml:"projects"`
+	Hardware  []Hardware `yaml:"hardware"`
 	Misc      []string
 }
 

@@ -323,6 +323,13 @@ projects:
     url: https://github.com/godotengine/godot
     description: Bugfix for string marshalling & financial sponsorship.
     stars: 33800
+hardware:
+  - name: Deck65
+    url: https://github.com/and3rson/deck65
+    description: Single-board computer based on the legendary 6502 CPU
+  - name: Leo80
+    url: https://github.com/and3rson/leo80
+    description: Z80-based single-board computer
 misc:
   - I love terminals.
   - I use Vim & PyCharm as development environments.

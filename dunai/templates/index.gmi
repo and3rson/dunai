@@ -21,9 +21,14 @@
     {{ if $i }} / {{ end }}{{ range $key, $value := $technology }}{{ $key }}{{ end }}
 {{- end }}
 {{ end }}
-## Some of my public contributions
-{{ range $project := .projects }}
-=> {{ $project.Link }} {{ $project.Title }}{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end }} - {{ $project.Link }}
+## Software contributions
+{{ range $project := .cv.Projects }}
+=> {{ $project.Url }} {{ $project.Name }}{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end }} - {{ $project.Url }}
+{{ $project.Description }}
+{{ end }}
+## Personal hardware projects
+{{ range $project := .cv.Hardware }}
+=> {{ $project.Url }} {{ $project.Name }} - {{ $project.Url }}
 {{ $project.Description }}
 {{ end }}
 ## Contacts
