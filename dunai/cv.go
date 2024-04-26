@@ -19,14 +19,14 @@ type Company struct {
 	End          *time.Time          `yaml:"end"`
 }
 
-type Project struct {
+type Software struct {
 	Name        string `yaml:"name"`
 	Url         string `yaml:"url"`
 	Description string `yaml:"description"`
 	Stars       int    `yaml:"stars"`
 }
 
-type Hardware struct {
+type Project struct {
 	Name        string `yaml:"name"`
 	Url         string `yaml:"url"`
 	Description string `yaml:"description"`
@@ -35,8 +35,8 @@ type Hardware struct {
 type CV struct {
 	Bio       []string   `yaml:"bio"`
 	Companies []Company  `yaml:"companies"`
+	Software  []Software `yaml:"software"`
 	Projects  []Project  `yaml:"projects"`
-	Hardware  []Hardware `yaml:"hardware"`
 	Misc      []string
 }
 

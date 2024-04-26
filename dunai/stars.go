@@ -12,7 +12,7 @@ import (
 func UpdateStars(cv *CV) {
 	expr := regexp.MustCompile(`.*github.com/([a-zA-Z0-9_\.-]+)/([a-zA-Z0-9_\.-]+)`)
 	star_expr := regexp.MustCompile(`(\d+) users starred`)
-	for index, project := range cv.Projects {
+	for index, project := range cv.Software {
 		matches := expr.FindStringSubmatch(project.Url)
 		if len(matches) != 3 {
 			continue
@@ -31,6 +31,6 @@ func UpdateStars(cv *CV) {
 		}
 		stars, _ := strconv.Atoi(star_match[1])
 		fmt.Println(stars)
-		cv.Projects[index].Stars = stars
+		cv.Software[index].Stars = stars
 	}
 }

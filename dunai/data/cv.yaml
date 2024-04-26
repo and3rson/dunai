@@ -6,6 +6,27 @@ bio:
   - >
       I've been coding for around 14 years and experienced a lot of technologies. My belief is that every task requires a specific set of tools and technologies in order to be solved efficiently. That's why I often switch mainly between Python, Go, JS, C, and Java (sorted by experience.)
 companies:
+  - name: WellSky
+    icon: images/wellsky_64.png
+    color: '#A9431E'
+    role: Software Architect
+    technologies:
+      - Generative AI: genai
+      - Prompt Engineering: genai
+      - LangChain: genai
+      - Serverless: serverless
+      - Google Cloud: gcp
+      - AWS: aws
+      - Domain-Driven Design: ddd
+      - Python: python
+      - TypeScript: javascript
+      - Terraform Enterprise: linux
+    info: |
+      WellSky software, analytics, and services empower healthcare and community care providers to deliver patient-centered, data-driven, and highly coordinated care.
+    description: |
+      Utilizing Prompt Engineering and multi-modal LLMs for document data extraction, implementing Retrieval-Augumented Generation for processing large amounts of unlabeled data.
+      Migrating multi-product infrastructure from AWS to GCP, guiding team towards best practices in Hexagonal Architecture & Domain-Driven Design, integrating Infrastructure-as-Code, building scalable serverless architectures for new and existing projects.
+    start: !!timestamp 2022-02-01
   - name: Holmusk
     icon: images/holmusk_64.png
     color: '#1646B5'
@@ -278,7 +299,7 @@ companies:
       The project was running for over 9 years and had around 45.000 members before it was shutdown. It was one of my longest-living children.
     start: !!timestamp 2007-02-01
     end: !!timestamp 2007-11-01
-projects:
+software:
   - name: urwid
     url: https://github.com/urwid/urwid
     description: I'm currently maintaining this awesome library. It's a framework for building terminal-based user interfaces. I love terminals!
@@ -323,7 +344,16 @@ projects:
     url: https://github.com/godotengine/godot
     description: Bugfix for string marshalling & financial sponsorship.
     stars: 33800
-hardware:
+projects:
+  - name: Youtube-канал "Андерсон"
+    url: https://www.youtube.com/@space.caveman
+    description: Мій канал про технології, ретро-комп'ютери, програмування і речі, які я люблю.
+  - name: alerts.com.ua
+    url: https://alerts.com.ua
+    description: Неофіційний API для отримання інформації про повітряні тривоги в Україні в режимі реального часу.
+  - name: Лілка
+    url: https://lilka.dev
+    description: DIY-консоль, яку можна зібрати з дешевих готових модулів.
   - name: Deck65
     url: https://github.com/and3rson/deck65
     description: Single-board computer based on the legendary 6502 CPU

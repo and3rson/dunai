@@ -52,7 +52,7 @@
             list-style: none;
             padding: 0 1rem 0 2.5em;
             background-repeat: no-repeat;
-            background-position: left center;
+            background-position: left top;
             background-size: 2em;
             margin-bottom: 2em;
             display: inline-block;
@@ -81,7 +81,7 @@
             width: 33.3333%;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 800px), print {
             ul.timeline li {
                 width: 100%;
             }
@@ -119,6 +119,9 @@
             <p>
                 {{ $company.Info }}
             </p>
+            <p>
+                {{ $company.Description }}
+            </p>
             <p class="tags">
                 {{ range $i, $technology := $company.Technologies -}}
                 {{ if $i }} / {{ end }}{{ range $key, $value := $technology }}{{ $key }}{{ end }}
@@ -128,9 +131,9 @@
         {{ end }}
     </ul>
 
-    <h2>Software contributions</h2>
+    <h2>Software</h2>
     <ul class="projects">
-        {{ range $project := .cv.Projects }}
+        {{ range $project := .cv.Software }}
         <li>
             <a href="{{ $project.Url }}">{{ $project.Name }}</a>{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end
             }}
@@ -139,9 +142,9 @@
         {{ end }}
     </ul>
 
-    <h2>Personal hardware projects</h2>
+    <h2>Personal projects</h2>
     <ul class="projects">
-        {{ range $project := .cv.Hardware }}
+        {{ range $project := .cv.Projects }}
         <li>
             <a href="{{ $project.Url }}">{{ $project.Name }}</a>
             <p>{{ $project.Description }}</p>
