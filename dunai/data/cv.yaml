@@ -1,36 +1,44 @@
 bio:
-  - >
-    Я володію глибокими знаннями в сфері комп’ютерних технологій, мереж та кібербезпеки, оскільки розпочав свій кар’єрний шлях ще до того, як інформаційні технології набули сьогоденної глобальної популярності та проникли у всі сфери життя.
-    Все своє свідоме життя я присвятив вдосконаленню своїх знань та навичок в галузі інформаційних технологі і маю комерційний досвід, який пов’язаний з величезною кількість технологій, платформ та сфер.
-    Я вважаю, що мої знання чудово допоможуть моїй країні в знищенні ворога.
-  - >
-    Я люблю термінали, мотоцикли, neovim, Python, Golang, C, C++, Go, 3D-графіку, шейдери, Doom, вбудовані технології, ретро-комп'ютери, процесор 6502, статичну типізацію, вільне програмне забезпечення та треш-метал.
+  - Я володію глибокими знаннями в сфері комп’ютерних технологій, мереж та кібербезпеки, оскільки розпочав свій кар’єрний шлях ще до того, як інформаційні технології набули сьогоденної глобальної популярності та проникли у всі сфери життя. Це були ті часи, коли ця спеціальність ще називалась "комп'ютерщик".
+  - Свою кар'єру я розпочав ще в 9-му класі, працюючи як фрілансер.
+  - Все своє свідоме життя я присвятив вдосконаленню знань та навичок в галузі інформаційних технологій і маю комерційний досвід, який пов’язаний з величезною кількість технологій, платформ та сфер. 
+  - Я хочу застосувани свої знання та досвід, щоб допомогти моїй країні знищити ворога.
+  - 32 роки, цивільний шлюб, маю сина.
 features:
-  - 10+ років комерційного досвіду з Python та JavaScript
-  - 15+ років комерційного досвіду з GNU/Linux
-  - C/C++, Golang, Assembly (x86, 6502, AVR), Java (впорядковано по досвіду)
-  - СКБД *SQL, Firestore, DynamoDB, MongoDB, BigQuery та інші
+  - 10+ років комерційного досвіду з **Python** та **JavaScript**
+  - 15+ років комерційного досвіду з **GNU/Linux, емуляторами терміналів та стандартними утилітами GNU**
+  - "**C/C++, Golang, Assembly (x86, 6502, AVR), Java** (впорядковано по досвіду)"
+  - СКБД ***SQL, Firestore, DynamoDB, MongoDB, BigQuery та інші**
   - >
-    Комерційний досвід роботи з високонавантаженими розподіленими комп’ютерними системами та хмарними платформами: AWS - 10 років досвіду, GCP - 5 років досвіду
+    Комерційний досвід роботи з **високонавантаженими розподіленими комп’ютерними системами** та **хмарними платформами**: **AWS** - 10 років досвіду, **GCP** - 5 років досвіду
   - Комерційний досвід побудови високодоступних інфраструктур з використанням контейнеризованих систем та оркестраторів (Docker, ECS/EKS, GKE)
-  - Комерційний досвід застосування Infrastructure as Code (Terraform Enterprise, CloudFormation, Serverless, GitOps)
-  - Комерційний досвід роботи в якості Full-Stack розробника та Tech Lead для невеликих команд розробників (~10 осіб)
-  - Комерційний досвід роботи з OpenCV та нейронними мережами (Keras/TensorFlow) для опрацювання та класифікації зображень
-  - Комерційний досвід роботи з Генеративним ШІ (Generative AI), Prompt Engineering та Retrieval-Augumented Generation для витягнення даних з великих обсягів документів та автоматизації заповнення форм
-  - Комерційний досвід використання та інтеграції алгоритмів симетричної/асиметричної криптографії, цифрових підписів та шифрування даних і повідомлень
+  - Комерційний досвід застосування **Infrastructure as Code (Terraform Enterprise, CloudFormation, Serverless, GitOps)**
+  - Комерційний досвід роботи в якості **Full Stack розробника** та **Tech Lead** для невеликих команд розробників (~10 осіб)
+  - Комерційний досвід роботи з **OpenCV** та **нейронними мережами (Keras/TensorFlow)** для опрацювання та класифікації зображень
+  - Комерційний досвід роботи з **Генеративним ШІ (Generative AI)**, **Prompt Engineering** та **Retrieval-Augumented Generation** для витягнення даних з великих обсягів документів та автоматизації заповнення форм
+  - Комерційний досвід використання та інтеграції алгоритмів **симетричної/асиметричної криптографії, цифрових підписів та шифрування даних і повідомлень**
   - >
-    Комерційний досвід Solution Architecture: формування ТЗ та побудова рішень для бізнесу, створення супутньої дукоментації, автоматизація процесів CI/CD, планування та налаштування моніторингів, навчання команди для подальшого супроводу проєктів
+    Комерційний досвід **Solution Architecture**: формування ТЗ та побудова рішень для бізнесу, створення супутньої дукоментації, автоматизація процесів CI/CD, планування та налаштування моніторингів, навчання команди для подальшого супроводу проєктів
   - Досвід написання чат-ботів для різних месенджерів
-  - Досвід розробки та побудови IoT-систем та пристроїв на базі 8-бітних мікропроцесорів та вбудованих SoC-систем (Atmel, ESP8266/ESP32, RPI, 808x, 6502/65816, Z80), а також невеликий досвід програмування ПЛІС
+  - Досвід розробки та побудови IoT-систем та пристроїв на базі **8-бітних мікропроцесорів та вбудованих SoC-систем** (Atmel, ESP8266/ESP32, RPI, 808x, 6502 та 65816, Z80), протоколів передачі даних (SPI/I2C/UART, MQTT/TCP/UDP, стек TCP/IP і OSI-модель загалом), а також невеликий досвід програмування ПЛІС
   - Досвід з пошуку прихованих та незахищених ресурсів з використанням відкритих інструментів та OSINT-практик з метою ідентифікації шахраїв та зловмисників
-  - Досвід роботи з 3D-рушіями, шейдерами та процедурною генерацією зображень та геометрій
+  - Досвід роботи з **3D-рушіями, шейдерами, процедурною генерацією зображень та геометрій, математичними алгоритмами обчислення параментів поверхонь**
   - >
-    Досвід роботи з CAD для проєктування електронних схем, друкованих плат та корпусів: KiCad, LibreCAD та FreeCAD
-  - Розвиток сфери Open Source – я є автором багатьох внесків, зокрема в код ядра Linux, офіційний фреймворк ESP32, мову Python (Cpython) та ряд бібліотек і рушіїв (three.js, urwid, qtile, godot)
+    Досвід роботи з **CAD** для проєктування електронних схем, друкованих плат та корпусів: **KiCad, LibreCAD та FreeCAD**
+  - Досвід у сфері **розробки ігор** (Godot)
+  - Розвиток сфери **Open Source** – я є автором багатьох внесків, зокрема в код ядра **Linux**, офіційний фреймворк **ESP32**, мову **Python (Cpython)** та ряд бібліотек і рушіїв (**three.js, urwid, qtile, godot**)
+  - Досвід роботи з мейнфеймами IBM System z
   - Базові навички радіолюбителя
+education:
+  - >
+    Бакалавр, Комп'ютерна інженерія, Інститут комп'ютерних технологій, автоматики та метрології, Національний Університет "Львівська Політехніка"
+  - >
+    Середня освіта, Львівська Українська Гуманітарна Гімназія ім. Олени Степанівни
 languages:
+  - >
+    Українська: рідна
   - > 
-    Англійська: advanced
+    Англійська: advanced (C1)
   - > 
     Польська: базовий
   - > 
@@ -39,7 +47,7 @@ companies:
   - name: WellSky
     icon: images/wellsky_64.png
     color: '#A9431E'
-    role: Software Architect
+    role: Архітектор Програмного Забезпечення
     technologies:
       - Generative AI: genai
       - Prompt Engineering: genai
@@ -53,14 +61,15 @@ companies:
       - Terraform Enterprise: linux
     info: |
       WellSky software, analytics, and services empower healthcare and community care providers to deliver patient-centered, data-driven, and highly coordinated care.
-    description: |
-      Utilizing Prompt Engineering and multi-modal LLMs for document data extraction, implementing Retrieval-Augumented Generation for processing large amounts of unlabeled data.
-      Migrating multi-product infrastructure from AWS to GCP, guiding team towards best practices in Hexagonal Architecture & Domain-Driven Design, integrating Infrastructure-as-Code, building scalable serverless architectures for new and existing projects.
+    description:
+      - Застосування тактик Prompt Engineering та мультимодальних систем штучного інтелекту для опрацювання виликих обсягів некласифікованих документів з метою ідентифікації та екстракції структурованих даних.
+      - Мігрування хмарних інфраструктур систем з AWS на GCP, керування та навчання команди в галузі Hexagonal Architecture та Domain-Driven Design, інтергація Infrastructure-as-Code, побудова масштабованих serverless архітектур для нових та існуючих проєктів.
     start: !!timestamp 2022-02-01
+
   - name: Holmusk
     icon: images/holmusk_64.png
     color: '#1646B5'
-    role: Software Architect
+    role: Архітектор Програмного Забезпечення
     technologies:
       - Python: python
       - Flask: flask
@@ -76,15 +85,15 @@ companies:
       - Networking & security: security
     info: |
       Mental health disorders remain the highest unmet medical need, surpassing cardiovascular disease, diabetes and cancer. Cumulative economic burden exceed 16 Trillion USD in direct and indirect costs. At Holmusk, we are addressing this problem by building the world's largest Real-World Evidence (RWE) platform for mental health to deliver clinical and regulatory grade evidence to all major stakeholders of the healthcare ecosystem.
-    description: |
-      Leading development of two projects: a highly available data interfacing service with support of HL7/FHIR payloads for data ingestion and an on-premise application that anonimyzes PHI-sensitive data for further distribution to researchers according to HIPAA requirements.
+    description:
+      - "Керування двома проєктами, створеними з нуля: високодоступна розподілена система обміну даними з підтримкою HL7/FHIR для передачі медичних записів та подій між існуючими системами, а також побудова переносної системи для деідентифікації документів, що містять особисту інформацію з метою передачі результатів командам дослідників."
     start: !!timestamp 2020-05-01
     end: !!timestamp 2022-02-01
 
   - name: Micah Group
     icon: images/micahgroup_64.png
-    color: '#F9AD4F'
-    role: Software Architect
+    color: '#C97D1F'
+    role: Архітектор Програмного Забезпечення
     technologies:
       - Python: python
       - Django: django
@@ -100,15 +109,15 @@ companies:
       - Networking & security: security
     info: |
       Micah Group is a financial document processing & decision making automation system for companies that provide loans to their customers.
-    description: |
-      I built a multi-service architecture & developed functionality for an automated document processing, OCR recognition, neural network processing, unpredicted structured data processing & feature extraction from financial statement documents with Python, Django, Keras & TensorFlow.
+    description:
+      - Створення з нуля багатосервісної архітектури продукту для автоматизованого опрацювання фінансових документів з використанням OCR та нейронних мереж для отримання структурованих даних з некласифікованих документів.
     start: !!timestamp 2018-04-01
     end: !!timestamp 2019-12-01
 
-  - name: T1DExchange (UnitIO)
+  - name: T1DExchange
     icon: images/t1dexchange_64.png
     color: '#00A9D0'
-    role: Software Architect
+    role: Архітектор Програмного Забезпечення
     technologies:
       - Python: python
       - Django: django
@@ -124,15 +133,15 @@ companies:
       - Networking & security: security
     info: |
       T1DExchange is a Biological research project for people with type 1 diabetes.
-    description: |
-      I created entire infrastructure from scratch that automates collection, processing, managing and delivering of biological & PHI data.
+    description:
+      - Створення з нуля інфраструктури та ПЗ для автоматизації збору, опрацювання, скерування та доставки біологічних зразків.
     start: !!timestamp 2016-06-01
     end: !!timestamp 2018-04-01
 
   - name: Red e App
     icon: images/redeapp_64.png
     color: '#DC1E33'
-    role: Back-End Architect
+    role: Backend Архітектор
     technologies:
       - Python: python
       - Django: django
@@ -148,18 +157,17 @@ companies:
       - Networking & security: security
     info: |
       A distributed communication system that provides the corporate messaging platform with advanced management tools built for large enterprises.
-    description: |
-      I took lead in planning & building entire infrastructure and component architecture from scratch.
-      I developed backend for services in Python & NodeJS.
-      I automating testing & deployment processes with Docker & AWS.
-      My architecture is running decoupled components that play together thanks to RabbitMQ, Consul & Redis.
+    description:
+      - Керування процесом трансформації архітектури існуючого продукту, що поєднує в собі корпоративний месенджер та CRM.
+      - Написання коду на Python та NodeJS, створення супутньої документації та навчання існуючого персоналу найкращим практикам розробки розподілених високодоступних систем.
+      - Автоматизація процесів тестування та розгортання з використанням контейнеризації та AWS.
     start: !!timestamp 2016-05-01
     end: !!timestamp 2017-06-01
 
   - name: Kultivo.com
     icon: images/kultivo_64.png
     color: '#0469FF'
-    role: Senior Python Dev
+    role: Senior Python Розробник
     technologies:
       - Python: python
       - Django: django
@@ -168,8 +176,8 @@ companies:
       - PostgreSQL: postgresql
     info: |
       Marketplace for courses as well as one-shot training sessions.
-    description: |
-      I created backend code and templates for profile management.
+    description:
+      - Створення серверної частини, шаблонів та керування профілями користувачів.
     start: !!timestamp 2015-07-01
     end: !!timestamp 2016-01-01
 
@@ -177,7 +185,7 @@ companies:
     icon: images/n1ght_64.png
     color: '#2825AB'
     bgcolor: '#003300'
-    role: Senior Python Dev
+    role: Senior Full Stack Розробник
     technologies:
       - Python: python
       - Django: django
@@ -189,30 +197,31 @@ companies:
       - Heroku: heroku
     info: |
       "A service that provides centralized access to aggregated data about events, festivals & parties around the globe."
-    description: |
-      I took lead in creating Python backend & frontend. I also created a Java Android app from scratch.
+    description:
+      - Створення серверної та клієнтсьвої частини для онлайн-сервісу, робота з геоданими та пошуком локацій.
+      - Написання клієнтського додатку для Android (Java) та WearOS.
     start: !!timestamp 2014-11-01
     end: !!timestamp 2015-07-01
 
   - name: OspreyData, Inc.
     icon: images/ospreydata_64.png
     color: '#0194D5'
-    role: Senior Python Dev
+    role: Senior Python Розробник
     technologies:
       - Python: python
       - Django: django
       - MySQL: mysql
     info: |
       The OspreyData platform is designed from the ground up with sensor analytics in mind, focusing on storing and manipulating time series data and modeling complex relationships between high-resolution signals.
-    description: |
-      I developed a backend that gathers & processes data from sensors installed on industrial enterprises, in particular - oil factories.
+    description:
+      - Написання серверного коду для опрацювання даних з датчиків, встановлених в промислових приміщеннях, зокрема на нафтопереробних заводах.
     start: !!timestamp 2014-09-01
     end: !!timestamp 2014-10-01
 
   - name: qBeats, Inc.
     icon: images/qbeats_64.png
     color: '#DF0700'
-    role: Senior Full-Stack Dev
+    role: Senior Full Stack Розробник
     technologies:
       - Python: python
       - Django: django
@@ -228,16 +237,15 @@ companies:
       - RabbitMQ: rabbitmq
     info: |
       The first company in the world to develop real-time dynamic pricing technology for digital information.
-    description: |
-      I took part in building a highly available application backend.
-      I wired things up using Django, Twisted, Solr & RabbitMQ. We were storing data in PostgreSQL & Mongo.
-      I implemented missing functionality for user channels in desktop C++ application that was written in Qt.
+    description:
+      - Побудова серверної часнтини високонавантаженої системи для публікації новин.
+      - Вдосконалення існуючого клієнтського додатку, написаного на C++ з використанням фреймворку Qt.
     start: !!timestamp 2013-08-01
     end: !!timestamp 2014-06-01
 
   - name: Axiomatics
     icon: images/axiomatics_64.png
-    color: '#D4E16C'
+    color: '#A4B13C'
     role: Senior Webmaster
     technologies:
       - PHP: php
@@ -246,12 +254,10 @@ companies:
       - Networking & security: security
     info: |
       Axiomatics provides fine-grained access control and ABAC solutions for IT enterprises.
-    description: |
-      I administered three cooperating Joomla-driven portals.
-      I implemented Single Sign-On for thousands of users that were registered on those three websites.
-      It took some time to implement a bulletproof logic for allowing users to register on any of these portals
-      and then easily switch between the three of them.
-      I also did numerous updates to the frontend and administrator portal backend.
+    description:
+      - Розробка та адміністрування трьох веб-порталів.
+      - Інтеграція порталів в єдину систему та введення можливості Single Sign-On.
+      - Вдосконалення клієнтської та серверної частини з метою зменшення часу завантаження сторіки.
     start: !!timestamp 2013-02-01
     end: !!timestamp 2013-08-01
 
@@ -276,24 +282,20 @@ companies:
       - Networking & security: security
     info: |
       A collection agency, i. e. a company that recover funds that are past due or accounts that are in default.
-    description: |
-      I created customer area portal from scratch (backend + frontend). It was an application that granted privileged
-      users to access & manage their financial information using internet.
-      I also replaced existing call center operator software with a new one that allowed us
-      to orchestrate 350 internal workspaces remotely and easily perform mass OTA updates.
-      I refactored existing internal dial plan management system that used asterisk SIP (Asterisk) and which handled
-      over 1,000,000 phone calls a month.
-      I eliminated existing memory usage issues & file descriptor (that were initially caused by abusing threads) leaks
-      which allowed us to run the server continuously for months without having to restart it every 20 minutes as before.
-      I also developed a fork of "Twinkle" SIP client (written in Qt) that we called "Sparkle". It was using a
-      modified & simplified UI and gave the operators more control over their calls.
+    description:
+      - Створення з нуля клієнтського порталу (серверна та клієнтська частина) з метою надання привілейованого доступу до особистих та фінансових даних користувачів.
+      - Створення нового програмного забезпечення для кол-центру (~350 операторів), що дозволило внутрішній службі підтримки керувати індивідуальними машинами віддалено, а також здійснювати
+      - масове оновлення ПЗ.
+      - Вдосконалення підсистем керування телефонними дзвінками на базі Asterisk SIP, яка опрацьовувала близько мільйона дзвінків на місяць.
+      - Виправлення витоків пам'яті та файлових дескрипторів (оскільки поточне ПЗ вимагало перезапуску кожні 20 хв), що дозволило їй працювати місяцями без перезапусків і таким чином значно збільшило пропускну здатність системи та мінімізувало періодичні затримки.
+      - Створення модифікованої версії SIP-клієнта "Twinkle" з новим інтерфейсом користувача, адаптованим під потреби компанії.
     start: !!timestamp 2011-01-01
     end: !!timestamp 2013-02-01
 
   - name: Freelancer.com
     icon: images/freelancer2_64.png
     color: '#0092CE'
-    role: Full Stack Dev
+    role: Full Stack Розробник
     technologies:
       - PHP: php
       - C#: csharp
@@ -303,18 +305,15 @@ companies:
       - Linux administration: linux
     info: |
       A global crowdsourcing marketplace website.
-    description: |
-      I completed over 30 projects during this period including: numerous
-      SPA websites developed in PHP & JS/HTML/CSS, student management software for schools in Essex (Englang) and
-      even a space invaders game written in C# for a student who didn't want to do it himself
-      and preferred to pay someone else to do it.
+    description:
+      - Близько 30 різноманітних проєктів в якості Full Stack розробника (PHP/C#/SQL/JS/HTML/CSS), серед них - SPA-вебсайти, ПЗ для керування даними учнів в школах Ессексу (Англія) та навіть розв'язок домашніх завдань.
     start: !!timestamp 2007-04-01
     end: !!timestamp 2012-01-01
 
   - name: Airbites
     icon: images/airbites_64.png
     color: '#B2B2B2'
-    role: Back-End Dev
+    role: Backend Розробник
     technologies:
       - PHP: php
       - Web: web
@@ -323,68 +322,68 @@ companies:
       - Linux administration: linux
       - Networking & security: security
     info: |
-      Ukrainian internet service provider (acquired by Volia ISP in 2017.)
-    description: |
-      I created a social network backend from scratch for a local ISP. I've set up a dedicated server from scratch running FreeBSD.
-      The project was running for over 9 years and had around 45.000 members before it was shutdown. It was one of my longest-living children.
+      Ukrainian internet service provider
+    description:
+      - Створення з нуля соціальної мережі "MyAirbites" для інтернет-провайдера Airbites (в 2017-му році був придбаний компанією Volia), налаштування та адміністрування сервера на FreeBSD.
+      - Цей проєкт тривав 9 років та мав близько 45 тисяч активних користувачів, перш ніж його витіснили соціальні мережі та месенджери.
     start: !!timestamp 2007-02-01
     end: !!timestamp 2007-11-01
 software:
   - name: urwid
     url: https://github.com/urwid/urwid
-    description: I'm currently maintaining this awesome library. It's a framework for building terminal-based user interfaces. I love terminals!
+    description: Бібліотека для створення графічних інтерфейсів в терміналах. Я - один з керівників проєкту.
     stars: 2000
   - name: arduino-esp32
     url: https://github.com/espressif/arduino-esp32/
-    description: Fixes for SPI & SD card bugs
+    description: Виправлення проблем з конфліктами на шині SPI та бібліотеки для роботи з SD-картою
     stars: 12000
   - name: platformio-espressif32
     url: https://github.com/platformio/platform-espressif32
-    description: Added my Lilka v2 board to the official PlatformIO registry
+    description: Мій проєкт "Лілка v2" додано до офіційного переліку систем PlatformIO
     stars: 800
   - name: cpython
     url: https://github.com/python/cpython
-    description: Fix for naming collisions in mock module
+    description: Виправлення проблеми з конфліктом імен при використанні модуля "mock"
     stars: 59000
   - name: linux
     url: https://github.com/torvalds/linux
-    description: Added some new hardware definitions for my notebook that was not fully supported by kernel drivers
+    description: Додавання підтримки деяких компонентів мого ноутбука "Vinga" в драйвери ядра GNU/Linux
     stars: 170000
   - name: impress.js
     url: https://github.com/impress/impress.js
-    description: I've implemented touch & swipe support for slide transitions. After few years of decay it's now alive and well again!
+    description: Підтримка дотиків та жестів для зручнішої взаємодії з сторінками при перегляді на мобільних пристроях.
     stars: 35900
   - name: three.js
     url: https://github.com/mrdoob/three.js
-    description: I contributed a script that slices exported 3DS Max model animations into named sequences to allow using multiple animations within single model file. 3DS Max + THREE.js now rock even more!
+    description: Створення скрипта для нарізання анімацій, експортованих з 3DS Max, в іменовані послідовності, що дозволило використовувати багато окремих анімацій в єдиному файлі моделі.
     stars: 64099
   - name: godot
     url: https://github.com/godotengine/godot
-    description: Developing 3-to-4 migration tool, submitting bugfixes & financial sponsorship.
+    description: Допомога в розробці інструменту для міграції проєктів з версії 3 на версію 4, виправлення помилок в серіалізації рядків при передачі даних через мережу, а також фінансове спонсорство проєкту.
     stars: 33800
   - name: qtile
     url: https://github.com/qtile/qtile
-    description: Pure Python WM. I contributed some widgets & bug fixes.
+    description: Деякі нові віджети та виправлення помилок.
     stars: 2100
   - name: django-extensions
     url: https://github.com/django-extensions/django-extensions
-    description: I wrote Django management command to perform PostgreSQL database reinitialization without closing active connections.
+    description: Створення додаткової команди для скидання стану бази даних PostgreSQL без розривання активних підключень.
     stars: 5000
   - name: and3rson / nineapi (DEPRECATED)
     url: https://github.com/and3rson/nineapi
-    description: My awesome progress of reverse-engineering the terrible 9GAG API. Yes, there *is* a 9GAG API. It's just well-hidden.
+    description: Зворотня розробка та дешифрування API сервісу 9GAG API.
     stars: 39
   - name: and3rson / django-searchable-select
     url: https://github.com/and3rson/django-searchable-select
-    description: My implementation of a select field for Django admin panel with backend-side filtering - because life is too short to scroll.
+    description: Вдосконалене випадаюче поле для панелі адміністратора Django з можливістю пошуку, яке спрошує роботу з великими кількостями опцій.
     stars: 87
   - name: and3rson / clay (DEPRECATED)
     url: https://github.com/and3rson/clay
-    description: My own terminal-based player for Google Play Music. Built with passion using awesome urwid, gmusicapi and libvlc libraries."
+    description: Плеєр для Google Play Music, що працює в терміналі. Побудований на базі бібліотек urwid, gmusicapi та libvlc.
     stars: 162
   - name: and3rson / enlightenment
     url: https://github.com/and3rson/enlightenment
-    description: I wanted some real-time 2D fragment shader lighting in Phaser. I ended up writing my own in GLSL.
+    description: Фрагментний шейдер для 2D-освітлення в бібліотеці Phaser.
     stars: 6
 projects:
   - name: Youtube-канал "Андерсон"
@@ -397,27 +396,39 @@ projects:
     image: alerts.jpg
   - name: Лілка
     url: https://lilka.dev
-    description: DIY-консоль, яку можна зібрати з дешевих готових модулів.
+    description: Навчальна DIY-консоль "для дорослих", яку можна зібрати з дешевих готових модулів. Так, на ній вже можна грати в DOOM!
     image: lilka.jpg
   - name: Deck65
     url: https://github.com/and3rson/deck65
-    description: Single-board computer based on the legendary 6502 CPU
+    description: Одноплатний комп'ютер на базі мікропроцесора 65C02 з вбудованою клавіатурою, підтримкою WiFi, зовнішньої клавіатури, карт пам'яті та плат розширення.
     image: deck65.jpg
   - name: Leo80
     url: https://github.com/and3rson/leo80
-    description: Z80-based single-board computer
+    description: Простий одноплантиий комп'ютер на базі мікропроцесора Z80.
     image: leo80.jpg
 misc:
-  - Автор проєкту https://alerts.com.ua/
-  - Колишній волонтер ГО “Мотодопомога Львів”
-  - Учасник волонтерського проєкту “Спшенгло” (https://t.me/spriaglo)
-  - Музика (барабанщик, граю в жанрах Thrash/Groove Metal)
-  - Пишу музику в стилі Synthwave
-  - Зброя
-  - Розробка Open Source проєктів
-  - Побудова власних “homebrew-комп’ютерів” на базі процесорів 6502, Z80 та 8086
-  - Ретро-комп’ютери (маю цілу колекцію американських та європейських домашніх комп’ютерів 1980-х років випуску)
-  - Класичні комп’ютерні ігри (Doom 1993)
+  - Виховання сина
+  - Автор проєкту alerts.com.ua (<https://alerts.com.ua>)
+  - Колишній волонтер **ГО “Мотодопомога Львів”** (<https://www.motodopomoga.lviv.ua/>)
+  - Учасник **волонтерського проєкту “Спшенгло”** (https://t.me/spriaglo)
+  - Музика (**барабанщик**, граю в жанрах Thrash/Groove Metal)
+  - "**Пишу музику** в стилі Synthwave"
+  - "**Зброя**"
+  - Розробка **Open Source** проєктів
+  - Побудова власних **“homebrew-комп’ютерів”** на базі процесорів 6502, Z80 та 8086
+  - "**Ретро-комп’ютери** (маю велику колекцію американських та європейських домашніх комп’ютерів 1980-х років випуску)"
+  - Класичні комп’ютерні ігри (DOOM 1993, UT99, Quake)
   - Побудова власних літальних апаратів та роботів
   - Загальна теорія відносності та астрофізика
-  - Виховання сина
+  - >
+    Термінали, мотоцикли, neovim, Python, Golang, C, C++, Go, 3D-графіку, шейдери, DOOM, вбудовані технології, ретро-комп'ютери, процесор 6502, вільне програмне забезпечення та треш-метал.
+contacts:
+  - title: "LinkedIn: linkedin.com/in/dunai"
+    url: "https://linkedin.com/in/dunai"
+  - title: "E-mail: a@dun.ai"
+    url: "mailto:a@dun.ai"
+  - title: "Telegram: @andunai"
+    url: "https://t.me/andunai"
+  - title: "GitHub: and3rson"
+    url: "https://github.com/and3rson/"
+

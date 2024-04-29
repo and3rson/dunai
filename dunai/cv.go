@@ -14,7 +14,7 @@ type Company struct {
 	Role         string              `yaml:"role"`
 	Technologies []map[string]string `yaml:"technologies"`
 	Info         string              `yaml:"info"`
-	Description  string              `yaml:"description"`
+	Description  []string            `yaml:"description"`
 	Start        *time.Time          `yaml:"start"`
 	End          *time.Time          `yaml:"end"`
 }
@@ -33,22 +33,45 @@ type Project struct {
 	Image       string `yaml:"image"`
 }
 
+type Contact struct {
+	Title string `yaml:"title"`
+	Url   string `yaml:"url"`
+}
+
 type CV struct {
 	Bio       []string   `yaml:"bio"`
 	Features  []string   `yaml:"features"`
+	Education []string   `yaml:"education"`
 	Languages []string   `yaml:"languages"`
 	Companies []Company  `yaml:"companies"`
 	Software  []Software `yaml:"software"`
 	Projects  []Project  `yaml:"projects"`
 	Misc      []string
+	Contacts  []Contact
+}
+
+// Map of month names to Ukrainian
+var monthNames = map[string]string{
+	"January":   "січень",
+	"February":  "лютий",
+	"March":     "березень",
+	"April":     "квітень",
+	"May":       "травень",
+	"June":      "червень",
+	"July":      "липень",
+	"August":    "серпень",
+	"September": "вересень",
+	"October":   "жовтень",
+	"November":  "листопад",
+	"December":  "грудень",
 }
 
 func (c Company) PrettyStart() string {
-	return fmt.Sprintf("%s %d", c.Start.Month(), c.Start.Year())
+	return fmt.Sprintf("%s %d", monthNames[c.Start.Month().String()], c.Start.Year())
 }
 
 func (c Company) PrettyEnd() string {
-	return fmt.Sprintf("%s %d", c.End.Month(), c.End.Year())
+	return fmt.Sprintf("%s %d", monthNames[c.End.Month().String()], c.End.Year())
 }
 
 func ReadCV() (*CV, error) {

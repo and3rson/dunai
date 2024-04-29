@@ -2,238 +2,291 @@
 <html lang="en">
 
 <head>
-    <title>Andrew Dunai</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css">
-        html,
-        body {
-            font-family: sans-serif;
-            background: #111;
-            color: #DDD;
-            max-width: 1400px;
-            padding: 0;
-            margin: 0 auto;
-            display: block;
-        }
+	<title>Andrew Dunai</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		html,
+		body {
+			font-family: sans-serif;
+			background: #111;
+			color: #DDD;
+			max-width: 1400px;
+			padding: 0;
+			margin: 0 auto;
+			display: block;
+		}
 
-        body {
-            padding: 1rem;
-        }
+		body {
+			padding: 1rem;
+		}
 
-        strong {
-            color: #FFF;
-        }
+		strong {
+			color: #FFF;
+		}
 
-        .banner {
-            display: flex;
-            gap: 1em;
-            align-items: center;
-        }
+		.banner {
+			display: flex;
+			gap: 1em;
+			align-items: center;
+		}
 
-        .banner .left img {
-            width: 30vw;
-            height: auto;
-            border-radius: 50%;
-        }
+		.banner .left img {
+			width: 30vw;
+			height: auto;
+			border-radius: 50%;
+		}
 
-        .banner .right {
-            flex: 1;
-        }
+		.banner .right {
+			text-align: center;
+			flex: 1;
+		}
 
-        em {
-            color: #888;
-        }
+		em {
+			color: #888;
+		}
 
-        h1,
-        h2,
-        h3 {
-            font-family: serif;
-        }
+		h1 {
+			font-size: 3em;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
 
-        p {
-            margin: 0.5rem 0;
-        }
+		h1,
+		h2,
+		h3 {
+			font-family: serif;
+		}
 
-        ul.timeline {
-            padding-left: 1em;
-            font-size: 0;
-            box-sizing: border-box;
-            width: 100%;
-        }
+		p {
+			margin: 0.5rem 0;
+		}
 
-        ul.timeline li {
-            vertical-align: top;
-            box-sizing: border-box;
-            margin: 0;
-            font-size: 1rem;
-            list-style: none;
-            padding: 0 1rem 0 2.5em;
-            background-repeat: no-repeat;
-            background-position: left top;
-            background-size: 2em;
-            margin-bottom: 2em;
-            display: inline-block;
-            width: 50%;
-        }
+		ul.timeline {
+			padding-left: 1em;
+			font-size: 0;
+			box-sizing: border-box;
+			width: 100%;
+		}
 
-        ul.timeline p.tags {
-            font-size: 0.8rem;
-        }
+		ul.timeline li {
+			vertical-align: top;
+			box-sizing: border-box;
+			margin: 0;
+			font-size: 1rem;
+			list-style: none;
+			padding: 0 1rem 0 2.5em;
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: 2em;
+			margin-bottom: 2em;
+			display: inline-block;
+			width: 50%;
+		}
 
-        ul.software,
-        ul.projects {
-            padding-left: 1em;
-            font-size: 0;
-            box-sizing: border-box;
-            width: 100%;
-        }
+		ul.timeline p.tags {
+			font-size: 0.8rem;
+		}
 
-        ul.software li,
-        ul.projects li {
-            vertical-align: top;
-            box-sizing: border-box;
-            margin: 0;
-            font-size: 1rem;
-            padding: 0 1rem 0 0;
-            margin-bottom: 2em;
-            display: inline-block;
-            width: 33.3333%;
-        }
+		ul.software,
+		ul.projects {
+			padding-left: 1em;
+			font-size: 0;
+			box-sizing: border-box;
+			width: 100%;
+		}
 
-        ul.projects li {
-            display: inline-flex;
-            gap: 1em;
-        }
+		ul.software li,
+		ul.projects li {
+			vertical-align: top;
+			box-sizing: border-box;
+			margin: 0;
+			font-size: 1rem;
+			padding: 0 1rem 0 0;
+			margin-bottom: 2em;
+			display: inline-block;
+			width: 33.3333%;
+		}
 
-        ul.projects li>img {
-            width: 100%;
-            height: auto;
-        }
+		ul.projects li {
+			display: inline-flex;
+			align-items: start;
+			gap: 1em;
+		}
 
-        ul.projects li>* {
-            flex: 1;
-        }
+		ul.projects li>img {
+			width: 100%;
+			height: auto;
+		}
 
-        @media screen and (max-width: 800px),
-        print {
+		ul.projects li>* {
+			flex: 1;
+		}
 
-            html,
-            body {
-                background: #FFF;
-                color: #222;
-            }
+		@media screen and (max-width: 800px),
+		print {
 
-            em {
-                color: #555;
-            }
+			html,
+			body {
+				background: #FFF;
+				color: #222;
+			}
 
-            ul.timeline li {
-                width: 100%;
-            }
+			strong {
+				color: #000;
+			}
 
-            ul.projects li {
-                width: 100%;
-            }
-        }
-    </style>
+			em {
+				color: #555;
+			}
+
+			ul.timeline li {
+				width: 100%;
+			}
+
+			ul.projects li {
+				width: 100%;
+			}
+
+			ul.projects li :last-child {
+				flex: 2;
+			}
+
+			a {
+				color: #C00 !important;
+			}
+
+			.pagebreak {
+				page-break-before: always;
+			}
+
+			/* page-break-after works, as well */
+		}
+	</style>
 </head>
 
 <body>
-    <div class="banner">
-        <div class="left">
-            <img src="/static/images/new3c.jpg" alt="Andrew Dunai">
-        </div>
-        <div class="right">
-            <h1>Андрій Дунай</h1>
+	<div class="banner">
+		<div class="left">
+			<img src="/static/images/new3c.jpg" alt="Andrew Dunai">
+		</div>
+		<div class="right">
+			<h1>Андрій Дунай</h1>
 
-            <em>Архітектор програмного забезпечення з 16+ років комерційного досвіду в найрізноманітніших сферах.</em>
+			<p>
+				<em>
+					Архітектор програмного забезпечення з 17+ років комерційного досвіду в найрізноманітніших сферах.
+				</em>
+			</p>
 
-        </div>
-    </div>
+		</div>
+	</div>
 
-    <h2>Про мене</h2>
+	<h2>Про мене</h2>
 
-    {{ range $paragraph := .cv.Bio -}}
-    <p>{{- $paragraph }}</p>
-    {{ end -}}
+	{{ range $paragraph := .cv.Bio -}}
+	<p>{{- $paragraph }}</p>
+	{{ end -}}
 
-    <h2>Досвід</h2>
+	<h2>Досвід</h2>
 
-    <ul>
-        {{ range $paragraph := .cv.Features -}}
-        <li>{{- $paragraph }}</li>
-        {{ end -}}
-    </ul>
+	<ul>
+		{{ range $paragraph := .cv.Features -}}
+		<li>{{- $paragraph | markdown }}</li>
+		{{ end -}}
+	</ul>
 
-    <h2>Мови</h2>
+	<h2>Освіта</h2>
 
-    <ul>
-        {{ range $paragraph := .cv.Languages -}}
-        <li>{{- $paragraph }}</li>
-        {{ end -}}
-    </ul>
+	<ul>
+		{{ range $paragraph := .cv.Education -}}
+		<li>{{- $paragraph }}</li>
+		{{ end -}}
+	</ul>
 
-    <h2>Комерційний досвід</h2>
-    <ul class="timeline">
-        {{ range $company := .cv.Companies }}
-        <li style="background-image: url(/static/{{ $company.Icon }})">
-            <div><strong style="color: {{ $company.Color }}">{{ $company.Name }} - {{ $company.Role }}</strong>
-                <em>({{ $company.PrettyStart }} - {{ if $company.End }} {{ $company.PrettyEnd }}{{ else }}now{{ end
-                    }})</em>
-            </div>
-            <p>
-                {{ $company.Info }}
-            </p>
-            <p>
-                {{ $company.Description }}
-            </p>
-            <p class="tags">
-                {{ range $i, $technology := $company.Technologies -}}
-                {{ if $i }} / {{ end }}{{ range $key, $value := $technology }}{{ $key }}{{ end }}
-                {{- end }}
-            </p>
-        </li>
-        {{ end }}
-    </ul>
+	<h2>Мови</h2>
 
-    <h2>Деякі з моїх внесків</h2>
-    <ul class="software">
-        {{ range $project := .cv.Software }}
-        <li>
-            <a href="{{ $project.Url }}">{{ $project.Name }}</a>{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end
-            }}
-            <p>{{ $project.Description }}</p>
-        </li>
-        {{ end }}
-    </ul>
+	<ul>
+		{{ range $paragraph := .cv.Languages -}}
+		<li>{{- $paragraph }}</li>
+		{{ end -}}
+	</ul>
 
-    <h2>Особисті проєкти</h2>
-    <ul class="projects">
-        {{ range $project := .cv.Projects }}
-        <li>
-            <img src="/static/images/{{ $project.Image }}" alt="{{ $project.Name }}">
-            <div>
-                <a href="{{ $project.Url }}">{{ $project.Name }}</a>
-                <p>{{ $project.Description }}</p>
-            </div>
-        </li>
-        {{ end }}
-    </ul>
+	<div class="pagebreak"></div>
 
-    <h2>Інші захоплення</h2>
+	<h2>Комерційні проєкти</h2>
+	<ul class="timeline">
+		{{ range $company := .cv.Companies }}
+		<li style="background-image: url(/static/{{ $company.Icon }})">
+			<div><strong style="color: {{ $company.Color }}">{{ $company.Name }} - {{ $company.Role }}</strong>
+				<em>({{ $company.PrettyStart }} - {{ if $company.End }} {{ $company.PrettyEnd }}{{ else }}до сьогодні{{
+					end
+					}})</em>
+			</div>
+			<p>
+				<em>
+					{{ $company.Info }}
+				</em>
+			</p>
+			{{ range $description := $company.Description -}}
+			<p>
+				{{ $description | markdown }}
+			</p>
+			{{ end }}
+			</p>
+			<p class="tags">
+				{{ range $i, $technology := $company.Technologies -}}
+				{{ if $i }} / {{ end }}{{ range $key, $value := $technology }}{{ $key }}{{ end }}
+				{{- end }}
+			</p>
+		</li>
+		{{ end }}
+	</ul>
 
-    <ul>
-        {{ range $paragraph := .cv.Misc -}}
-        <li>{{- $paragraph }}</li>
-        {{ end -}}
-    </ul>
+	<div class="pagebreak"></div>
 
-    <h2>Контакти</h2>
+	<h2>Деякі з моїх внесків</h2>
+	<ul class="software">
+		{{ range $project := .cv.Software }}
+		<li>
+			<a href="{{ $project.Url }}">{{ $project.Name }}</a>{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end
+			}}
+			<p>{{ $project.Description }}</p>
+		</li>
+		{{ end }}
+	</ul>
 
-    <ul>
-        <li><a href="https://www.linkedin.com/in/dunai/">Linkedin: linkedin.com/in/dunai</a></li>
-        <li><a href="mailto:a@dun.ai">Email: a@dun.ai</a></li>
-    </ul>
+	<div class="pagebreak"></div>
+
+	<h2>Особисті проєкти</h2>
+	<ul class="projects">
+		{{ range $project := .cv.Projects }}
+		<li>
+			<img src="/static/images/{{ $project.Image }}" alt="{{ $project.Name }}">
+			<div>
+				<a href="{{ $project.Url }}">{{ $project.Name }}</a>
+				<p>{{ $project.Description }}</p>
+			</div>
+		</li>
+		{{ end }}
+	</ul>
+
+	<div class="pagebreak"></div>
+
+	<h2>Інші захоплення</h2>
+
+	<ul>
+		{{ range $paragraph := .cv.Misc -}}
+		<li>{{- $paragraph | markdown }}</li>
+		{{ end -}}
+	</ul>
+
+	<h2>Контакти</h2>
+
+	<ul>
+		{{ range $contact := .cv.Contacts -}}
+		<li><a href="{{- $contact.Url }}">{{- $contact.Title }}</a></li>
+		{{ end -}}
+	</ul>
 </body>
 
 </html>

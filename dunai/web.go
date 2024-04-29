@@ -7,6 +7,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
+	"github.com/russross/blackfriday/v2"
 )
 
 var IndexTemplate = MustLoadTemplate("index")
@@ -16,7 +17,13 @@ func MustLoadTemplate(name string) *htmlTemplate.Template {
 	if err != nil {
 		panic(err)
 	}
-	template, err := htmlTemplate.New("index").Parse(string(data))
+	template, err := htmlTemplate.New("index").Funcs(htmlTemplate.FuncMap{
+		"markdown": func(s string) htmlTemplate.HTML {
+			result := htmlTemplate.HTML(blackfriday.Run([]byte(s)))
+			// Strip the <p> and </p> tags
+			return result[3 : len(result)-5]
+		},
+	}).Parse(string(data))
 	if err != nil {
 		log.Fatal(err)
 	}
