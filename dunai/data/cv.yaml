@@ -1,10 +1,40 @@
 bio:
   - >
-      I love clean reusable code, lightweight web, distributed architectures, shells, vim, tmux, awesomewm, drones, IoT, Doom game series, UT99, multiplayer game hacking, OpenSource, heavy/thrash/stoner metal, traveling, motorcycles (I own Kawasaki Versys 650/2011), snowboarding & random adventures.
+    Я володію глибокими знаннями в сфері комп’ютерних технологій, мереж та кібербезпеки, оскільки розпочав свій кар’єрний шлях ще до того, як інформаційні технології набули сьогоденної глобальної популярності та проникли у всі сфери життя.
+    Все своє свідоме життя я присвятив вдосконаленню своїх знань та навичок в галузі інформаційних технологі і маю комерційний досвід, який пов’язаний з величезною кількість технологій, платформ та сфер.
+    Я вважаю, що мої знання чудово допоможуть моїй країні в знищенні ворога.
   - >
-      I like to pursuit fresh ideas, to be precise in my profession & to be verbose in communication.
+    Я люблю термінали, мотоцикли, neovim, Python, Golang, C, C++, Go, 3D-графіку, шейдери, Doom, вбудовані технології, ретро-комп'ютери, процесор 6502, статичну типізацію, вільне програмне забезпечення та треш-метал.
+features:
+  - 10+ років комерційного досвіду з Python та JavaScript
+  - 15+ років комерційного досвіду з GNU/Linux
+  - C/C++, Golang, Assembly (x86, 6502, AVR), Java (впорядковано по досвіду)
+  - СКБД *SQL, Firestore, DynamoDB, MongoDB, BigQuery та інші
   - >
-      I've been coding for around 14 years and experienced a lot of technologies. My belief is that every task requires a specific set of tools and technologies in order to be solved efficiently. That's why I often switch mainly between Python, Go, JS, C, and Java (sorted by experience.)
+    Комерційний досвід роботи з високонавантаженими розподіленими комп’ютерними системами та хмарними платформами: AWS - 10 років досвіду, GCP - 5 років досвіду
+  - Комерційний досвід побудови високодоступних інфраструктур з використанням контейнеризованих систем та оркестраторів (Docker, ECS/EKS, GKE)
+  - Комерційний досвід застосування Infrastructure as Code (Terraform Enterprise, CloudFormation, Serverless, GitOps)
+  - Комерційний досвід роботи в якості Full-Stack розробника та Tech Lead для невеликих команд розробників (~10 осіб)
+  - Комерційний досвід роботи з OpenCV та нейронними мережами (Keras/TensorFlow) для опрацювання та класифікації зображень
+  - Комерційний досвід роботи з Генеративним ШІ (Generative AI), Prompt Engineering та Retrieval-Augumented Generation для витягнення даних з великих обсягів документів та автоматизації заповнення форм
+  - Комерційний досвід використання та інтеграції алгоритмів симетричної/асиметричної криптографії, цифрових підписів та шифрування даних і повідомлень
+  - >
+    Комерційний досвід Solution Architecture: формування ТЗ та побудова рішень для бізнесу, створення супутньої дукоментації, автоматизація процесів CI/CD, планування та налаштування моніторингів, навчання команди для подальшого супроводу проєктів
+  - Досвід написання чат-ботів для різних месенджерів
+  - Досвід розробки та побудови IoT-систем та пристроїв на базі 8-бітних мікропроцесорів та вбудованих SoC-систем (Atmel, ESP8266/ESP32, RPI, 808x, 6502/65816, Z80), а також невеликий досвід програмування ПЛІС
+  - Досвід з пошуку прихованих та незахищених ресурсів з використанням відкритих інструментів та OSINT-практик з метою ідентифікації шахраїв та зловмисників
+  - Досвід роботи з 3D-рушіями, шейдерами та процедурною генерацією зображень та геометрій
+  - >
+    Досвід роботи з CAD для проєктування електронних схем, друкованих плат та корпусів: KiCad, LibreCAD та FreeCAD
+  - Розвиток сфери Open Source – я є автором багатьох внесків, зокрема в код ядра Linux, офіційний фреймворк ESP32, мову Python (Cpython) та ряд бібліотек і рушіїв (three.js, urwid, qtile, godot)
+  - Базові навички радіолюбителя
+languages:
+  - > 
+    Англійська: advanced
+  - > 
+    Польська: базовий
+  - > 
+    Німецька: базовий
 companies:
   - name: WellSky
     icon: images/wellsky_64.png
@@ -53,7 +83,7 @@ companies:
 
   - name: Micah Group
     icon: images/micahgroup_64.png
-    color: '#F9DD7F'
+    color: '#F9AD4F'
     role: Software Architect
     technologies:
       - Python: python
@@ -145,7 +175,7 @@ companies:
 
   - name: N1ght.com
     icon: images/n1ght_64.png
-    color: '#F8F5EB'
+    color: '#2825AB'
     bgcolor: '#003300'
     role: Senior Python Dev
     technologies:
@@ -227,7 +257,7 @@ companies:
 
   - name: PrimoCollect
     icon: images/primocollect_64.png
-    color: '#F2F2F2'
+    color: '#8282F2'
     bgcolor: '#444444'
     role: Technical Lead
     technologies:
@@ -304,6 +334,22 @@ software:
     url: https://github.com/urwid/urwid
     description: I'm currently maintaining this awesome library. It's a framework for building terminal-based user interfaces. I love terminals!
     stars: 2000
+  - name: arduino-esp32
+    url: https://github.com/espressif/arduino-esp32/
+    description: Fixes for SPI & SD card bugs
+    stars: 12000
+  - name: platformio-espressif32
+    url: https://github.com/platformio/platform-espressif32
+    description: Added my Lilka v2 board to the official PlatformIO registry
+    stars: 800
+  - name: cpython
+    url: https://github.com/python/cpython
+    description: Fix for naming collisions in mock module
+    stars: 59000
+  - name: linux
+    url: https://github.com/torvalds/linux
+    description: Added some new hardware definitions for my notebook that was not fully supported by kernel drivers
+    stars: 170000
   - name: impress.js
     url: https://github.com/impress/impress.js
     description: I've implemented touch & swipe support for slide transitions. After few years of decay it's now alive and well again!
@@ -312,23 +358,27 @@ software:
     url: https://github.com/mrdoob/three.js
     description: I contributed a script that slices exported 3DS Max model animations into named sequences to allow using multiple animations within single model file. 3DS Max + THREE.js now rock even more!
     stars: 64099
+  - name: godot
+    url: https://github.com/godotengine/godot
+    description: Developing 3-to-4 migration tool, submitting bugfixes & financial sponsorship.
+    stars: 33800
   - name: qtile
     url: https://github.com/qtile/qtile
-    description: Pure Python WM. I contributed some widgets & bug fixes and obviously broke some stuff that I also fixed thereafter.
+    description: Pure Python WM. I contributed some widgets & bug fixes.
     stars: 2100
   - name: django-extensions
     url: https://github.com/django-extensions/django-extensions
     description: I wrote Django management command to perform PostgreSQL database reinitialization without closing active connections.
     stars: 5000
-  - name: and3rson / nineapi
+  - name: and3rson / nineapi (DEPRECATED)
     url: https://github.com/and3rson/nineapi
-    description: My awesome progress of reverse-engineering the terrible 9GAG API. Yes, there *is* a 9GAG API. It's just well hidden.
+    description: My awesome progress of reverse-engineering the terrible 9GAG API. Yes, there *is* a 9GAG API. It's just well-hidden.
     stars: 39
   - name: and3rson / django-searchable-select
     url: https://github.com/and3rson/django-searchable-select
     description: My implementation of a select field for Django admin panel with backend-side filtering - because life is too short to scroll.
     stars: 87
-  - name: and3rson / clay
+  - name: and3rson / clay (DEPRECATED)
     url: https://github.com/and3rson/clay
     description: My own terminal-based player for Google Play Music. Built with passion using awesome urwid, gmusicapi and libvlc libraries."
     stars: 162
@@ -336,43 +386,38 @@ software:
     url: https://github.com/and3rson/enlightenment
     description: I wanted some real-time 2D fragment shader lighting in Phaser. I ended up writing my own in GLSL.
     stars: 6
-  - name: and3rson / isc
-    url: https://github.com/and3rson/isc
-    description: ISC is a missing microservices (RPC & Pub/Sub) framework for Python including support of Django & Flask. It also supports NodeJS & Java. It's been battle-scarred in numerous commercial projects.
-    stars: 8
-  - name: godot
-    url: https://github.com/godotengine/godot
-    description: Bugfix for string marshalling & financial sponsorship.
-    stars: 33800
 projects:
   - name: Youtube-канал "Андерсон"
     url: https://www.youtube.com/@space.caveman
     description: Мій канал про технології, ретро-комп'ютери, програмування і речі, які я люблю.
+    image: anderson.jpg
   - name: alerts.com.ua
     url: https://alerts.com.ua
     description: Неофіційний API для отримання інформації про повітряні тривоги в Україні в режимі реального часу.
+    image: alerts.jpg
   - name: Лілка
     url: https://lilka.dev
     description: DIY-консоль, яку можна зібрати з дешевих готових модулів.
+    image: lilka.jpg
   - name: Deck65
     url: https://github.com/and3rson/deck65
     description: Single-board computer based on the legendary 6502 CPU
+    image: deck65.jpg
   - name: Leo80
     url: https://github.com/and3rson/leo80
     description: Z80-based single-board computer
+    image: leo80.jpg
 misc:
-  - I love terminals.
-  - I use Vim & PyCharm as development environments.
-  - I use Python & NodeJS most of the time.
-  - I sometimes need to use Go and C (and Java when building Android apps).
-  - I love tiling WMs (qTile & AwesomeWM).
-  - I love retro computers & 6502 CPU.
-  - I love ESP8266 & IoT.
-  - I believe that preserving low complexity of large project's components and respecting the law of Demeter is the key to maintainable system.
-  - I love shaders & 3D graphics.
-  - I love modding for HL, CS & Dota.
-  - I love trebuchets because they are the superior siege weapon.
-  - I've spent over 9000 hours in Unreal Tournament 1999, Hitman 1-3, Half-Life (& mods), CS:GO, Hotline Miami, Dota & C&C.
-  - I used to be Steam & Dota 2 translator and co-organizer & broadcaster of West-Ukrainian Dota 2 tournaments
-  - I used to develop cheats for CS:GO (own wallhack, modified esp hack, own flashbang hack), although I've never used them in ranked games.
-  - I had to deal with COBOL & DB/2 in the past. (Hi there, IBM System z!)
+  - Автор проєкту https://alerts.com.ua/
+  - Колишній волонтер ГО “Мотодопомога Львів”
+  - Учасник волонтерського проєкту “Спшенгло” (https://t.me/spriaglo)
+  - Музика (барабанщик, граю в жанрах Thrash/Groove Metal)
+  - Пишу музику в стилі Synthwave
+  - Зброя
+  - Розробка Open Source проєктів
+  - Побудова власних “homebrew-комп’ютерів” на базі процесорів 6502, Z80 та 8086
+  - Ретро-комп’ютери (маю цілу колекцію американських та європейських домашніх комп’ютерів 1980-х років випуску)
+  - Класичні комп’ютерні ігри (Doom 1993)
+  - Побудова власних літальних апаратів та роботів
+  - Загальна теорія відносності та астрофізика
+  - Виховання сина

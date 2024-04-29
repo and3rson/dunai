@@ -30,10 +30,13 @@ type Project struct {
 	Name        string `yaml:"name"`
 	Url         string `yaml:"url"`
 	Description string `yaml:"description"`
+	Image       string `yaml:"image"`
 }
 
 type CV struct {
 	Bio       []string   `yaml:"bio"`
+	Features  []string   `yaml:"features"`
+	Languages []string   `yaml:"languages"`
 	Companies []Company  `yaml:"companies"`
 	Software  []Software `yaml:"software"`
 	Projects  []Project  `yaml:"projects"`

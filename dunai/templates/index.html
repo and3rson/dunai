@@ -15,12 +15,29 @@
             margin: 0 auto;
             display: block;
         }
+
         body {
             padding: 1rem;
         }
 
         strong {
             color: #FFF;
+        }
+
+        .banner {
+            display: flex;
+            gap: 1em;
+            align-items: center;
+        }
+
+        .banner .left img {
+            width: 30vw;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .banner .right {
+            flex: 1;
         }
 
         em {
@@ -63,6 +80,7 @@
             font-size: 0.8rem;
         }
 
+        ul.software,
         ul.projects {
             padding-left: 1em;
             font-size: 0;
@@ -70,6 +88,7 @@
             width: 100%;
         }
 
+        ul.software li,
         ul.projects li {
             vertical-align: top;
             box-sizing: border-box;
@@ -81,7 +100,33 @@
             width: 33.3333%;
         }
 
-        @media screen and (max-width: 800px), print {
+        ul.projects li {
+            display: inline-flex;
+            gap: 1em;
+        }
+
+        ul.projects li>img {
+            width: 100%;
+            height: auto;
+        }
+
+        ul.projects li>* {
+            flex: 1;
+        }
+
+        @media screen and (max-width: 800px),
+        print {
+
+            html,
+            body {
+                background: #FFF;
+                color: #222;
+            }
+
+            em {
+                color: #555;
+            }
+
             ul.timeline li {
                 width: 100%;
             }
@@ -94,21 +139,41 @@
 </head>
 
 <body>
-    <h1>Andrew Dunai</h1>
+    <div class="banner">
+        <div class="left">
+            <img src="/static/images/new3c.jpg" alt="Andrew Dunai">
+        </div>
+        <div class="right">
+            <h1>Андрій Дунай</h1>
 
-    <em>Pwning teh internetz since 2007</em>
+            <em>Архітектор програмного забезпечення з 16+ років комерційного досвіду в найрізноманітніших сферах.</em>
 
-    <h2>About me</h2>
+        </div>
+    </div>
+
+    <h2>Про мене</h2>
+
+    {{ range $paragraph := .cv.Bio -}}
+    <p>{{- $paragraph }}</p>
+    {{ end -}}
+
+    <h2>Досвід</h2>
 
     <ul>
-        {{ range $paragraph := .cv.Bio -}}
+        {{ range $paragraph := .cv.Features -}}
         <li>{{- $paragraph }}</li>
         {{ end -}}
     </ul>
-    <p>Psst: this website is avaiable via <a href="https://gemini.circumlunar.space/">gemini</a> at <a
-            href="gemini://dun.ai/">gemini://dun.ai/</a>. Let's build a better, safer &amp; faster web together!</p>
 
-    <h2>Timeline</h2>
+    <h2>Мови</h2>
+
+    <ul>
+        {{ range $paragraph := .cv.Languages -}}
+        <li>{{- $paragraph }}</li>
+        {{ end -}}
+    </ul>
+
+    <h2>Комерційний досвід</h2>
     <ul class="timeline">
         {{ range $company := .cv.Companies }}
         <li style="background-image: url(/static/{{ $company.Icon }})">
@@ -131,8 +196,8 @@
         {{ end }}
     </ul>
 
-    <h2>Software</h2>
-    <ul class="projects">
+    <h2>Деякі з моїх внесків</h2>
+    <ul class="software">
         {{ range $project := .cv.Software }}
         <li>
             <a href="{{ $project.Url }}">{{ $project.Name }}</a>{{ if $project.Stars }} (★ {{ $project.Stars }}){{ end
@@ -142,17 +207,28 @@
         {{ end }}
     </ul>
 
-    <h2>Personal projects</h2>
+    <h2>Особисті проєкти</h2>
     <ul class="projects">
         {{ range $project := .cv.Projects }}
         <li>
-            <a href="{{ $project.Url }}">{{ $project.Name }}</a>
-            <p>{{ $project.Description }}</p>
+            <img src="/static/images/{{ $project.Image }}" alt="{{ $project.Name }}">
+            <div>
+                <a href="{{ $project.Url }}">{{ $project.Name }}</a>
+                <p>{{ $project.Description }}</p>
+            </div>
         </li>
         {{ end }}
     </ul>
 
-    <h2>Contacts</h2>
+    <h2>Інші захоплення</h2>
+
+    <ul>
+        {{ range $paragraph := .cv.Misc -}}
+        <li>{{- $paragraph }}</li>
+        {{ end -}}
+    </ul>
+
+    <h2>Контакти</h2>
 
     <ul>
         <li><a href="https://www.linkedin.com/in/dunai/">Linkedin: linkedin.com/in/dunai</a></li>
