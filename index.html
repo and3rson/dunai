@@ -4,6 +4,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFK</title>
     <style type="text/css">
         * {
             box-sizing: border-box;
@@ -31,24 +32,59 @@
             /* align-items: center; */
             justify-content: center;
             flex-direction: column;
+            min-width: 50vw;
+            padding: 1rem;
         }
 
         .afk {
-            font-size: 10rem;
-            text-align: left;
-            align-self: center;
+            font-family: monospace, courier new;
+            white-space: pre-wrap;
+            /* font-weight: 700; */
         }
 
-        .time,
-        .eta,
-        .location {
+        .term,
+        .loc {
             font-family: monospace, courier new;
-            white-space: pre;
+            white-space: pre-wrap;
+            /* color: #0F0; */
+            /* font-weight: 700; */
         }
+
+        .cursor {
+            font-family: monospace, courier new;
+            background: #FFF;
+            animation: blink 1s linear;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* .loc { */
+        /*     background: #FFF; */
+        /* } */
     </style>
 
     <script type="text/javascript">
-        function pluralize(n, one, few, many) {
+        function pluralizeUk(n, one, few, many) {
             n = Math.abs(n);
             const lastDigit = n % 10;
             const lastTwo = n % 100;
@@ -60,6 +96,12 @@
                 return few; // 2,3,4 дні
             }
             return many; // 5–20, 25, 100, etc.
+        }
+
+        function pluralizeEn(n, singular, plural) {
+            if (!plural) plural = singular + "s";
+
+            return (n % 10 === 1 && n % 100 !== 11) ? singular : plural;
         }
 
         function formatInterval(sec) {
@@ -76,24 +118,67 @@
             sec %= 60;
 
             const parts = [];
-            if (y) parts.push(`${y} ${pluralize(y, 'рік', 'роки', 'років')}`);
-            if (d) parts.push(`${d} ${pluralize(d, 'день', 'дні', 'днів')}`);
-            if (h) parts.push(`${h} ${pluralize(h, 'годину', 'години', 'годин')}`);
-            if (m) parts.push(`${m} ${pluralize(m, 'хвилину', 'хвилини', 'хвилин')}`);
-            if (sec) parts.push(`${sec} ${pluralize(sec, 'секунду', 'секунди', 'секунд')}`);
+            if (y) parts.push(`${y} ${pluralizeEn(y, 'year', 'years')}`);
+            if (d) parts.push(`${d} ${pluralizeEn(d, 'day', 'days')}`);
+            // if (h) parts.push(`${h} ${pluralize(h, 'годину', 'години', 'годин')}`);
+            // if (m) parts.push(`${m} ${pluralize(m, 'хвилину', 'хвилини', 'хвилин')}`);
+            // if (sec) parts.push(`${sec} ${pluralize(sec, 'секунду', 'секунди', 'секунд')}`);
+            parts.push(`${('' + h).padStart(2, '0')}:${('' + m).padStart(2, '0')}:${('' + sec).padStart(2, '0')}`)
 
-            return parts.length ? parts.join(" ") : "0 секунд";
+            return parts.length ? parts.join(" ") : "0 seconds";
+        }
+
+        function lerp(a, b, t) {
+            return a + (b - a) * t;
         }
 
         const start = new Date('2024-09-16');
 
         window.addEventListener('load', function () {
-            const $time = document.querySelector('.time');
+            const $term = document.querySelector('.term');
+
+            const banner = [
+                `<span class="afk">  ___  ______ _   __`,
+                ` / _ \\ |  ___| | / /`,
+                `/ /_\\ \\| |_  | |/ / `,
+                `|  _  ||  _| |    \\ `,
+                `| | | || |   | |\\  \\`,
+                `\\_| |_/\\_|   \\_| \\_/</span>`,
+                // `______ _   _ _   _        ___  _____`,
+                // `|  _  \\ | | | \\ | |      / _ \\|_   _|`,
+                // `| | | | | | |  \\| |     / /_\\ \\ | |`,
+                // `| | | | | | | . \` |     |  _  | | |`,
+                // `| |/ /| |_| | |\\  |  _  | | | |_| |_`,
+                // `|___/  \\___/\\_| \\_/ (_) \\_| |_/\\___/`,
+            ];
 
             const updateTime = function () {
                 const sec = parseInt((new Date() - start) / 1000);
+                const loc = '???';
+                // const port = parseInt(lerp(1024, 65535, Math.random()));
 
-                $time.innerHTML = `Last seen:  ${formatInterval(sec)} тому`;
+                $term.innerHTML = [
+                    ...banner,
+                    '',
+                    'status:      active duty',
+                    `last seen:   ${formatInterval(sec)} ago`,
+                    `location:    <span class="loc">${loc}</span>`,
+                    ``,
+
+                    // ` ______________________`,
+                    // `< Freedom is not free. >`,
+                    // ` ----------------------`,
+                    // `        \\   ^__^`,
+                    // `         \\  (oo)\\_______`,
+                    // `            (__)\\       )\\/\\`,
+                    // `                ||----w |`,
+                    // `                ||     ||`,
+
+                    `> Freedom is not free.`,
+                    ``,
+                    `Connection closed by remote host`,
+                    `$ <span class="cursor">&nbsp</span>`,
+                ].join('\n');
 
                 setTimeout(updateTime, 1000);
             };
@@ -105,10 +190,7 @@
 
 <body>
     <container>
-        <div class="afk">AFK</div>
-        <div class="time"></div>
-        <div class="eta">      ETA:  NULL</div>
-        <div class="location"> Location:  [REDACTED]</div>
+        <div class="term">AFK</div>
     </container>
 </body>
 
